@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+    <link rel="stylesheet" href="../stylesheets/index.css" type="text/css">
+    <link rel="stylesheet" href="../stylesheets/movie.css" type="text/css">
+    <script type="text/javascript" src="../javascripts/Script/jquery.js"></script>
+    <script type="text/javascript" src="../javascripts/index.js"></script>
+    <script type="text/javascript" src="../javascripts/Script/jquery.cookie.js"></script>
+    <!--    <title>电影主页</title>-->
+    <title>97电影网,高清电影下载,PVideos,97资源站,免费电影下载,不用下载播放器的电影网站</title>
+</head>
+<body>
+<div style="width: 1000px;height: 25px;margin: auto;line-height: 25px;opacity: 0.8">
+    <h4 style="text-align: left;display: inline-block;float: left"><em>欢迎来到PVideos电影首页,我们因为电影而相聚。</em></h4> <h5 style="text-align: right;display: inline-block;float: right"><span>我的收藏-</span>> <a href="http://weibo.com/u/5026812951/home?wvr=5" target="_blank" id="weibo">关注我的微博</a></h5>
+</div>
+<hr style="opacity: 0.5;">
+<header id="header">
+    <div id="biaoti">
+        <div class="biaoti_1"><h1>PVideos</h1></div>
+        <div class="biaoti_search">
+            <input type="text" id="search_text" placeholder="电影搜索">
+            <input type="button" id="btn_search" value="搜索">
+        </div>
+    </div>
+    <div id="daohang">
+        <nav id="nav">
+            <ul>
+                <li><a href="../index.html">首页</a></li>
+                <li><a href="../movie/movie.html">电影</a></li>
+                <li><a href="../movie/sharevip.html">迅雷VIP分享</a></li>
+                <li><a href="../movie/Top100_douban.html">豆瓣TOP250</a></li>
+                <li><a href="../movie/remen.html">最近热门</a></li>
+            </ul>
+            <ul>
+                <li><a href="">登录</a></li>
+                <li><a href="">注册</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<section class="section">
+    <div style="width: 100%;height: 150px;margin-bottom:20px;background:aliceblue;">
+        <div style="width: 90%;height: auto;padding: 40px 50px;line-height: 30px;font-size: 0.8em;color:darkslateblue">
+           <span>
+               电影热度排名是用以反映影片在过去7天内的用户关注度的榜单。我们根据用户在电影网上的多种行为，综合多项数据进行分析得出排名，它可以直接反映出近阶段热门影片的变化趋势。
+           </span>
+            <br>
+            <u>本列表只是显示影院排名信息，不一定有资源的。见谅~</u>
+        </div>
+    </div>
+    <div class="top_100">
+        <script>
+            $(document).ready(function(){
+                var n=1;
+                var moivesrc=["http://player.youku.com/player.php/sid/XNjk5MjE2NTc2/partnerid/d50c8689ebe03441/v.swf"]
+                var imgsrc=["../images/movie/buer.JPG"]
+                var moviename=["澳门风云2"]
+                var movieEnglish=["The Shawshank Redemption"]
+                var daoyuan=["王晶"]
+                var zhuyuan=["周润发"]
+                var date=["1994"]
+                var fenshu=["9.4"]
+                for(var i=0;i<n;i++){
+                    var num=i+4;
+                    //var bian='<div class="pailie"><a href="ShowVideo.html"><img src="images/movie/buer.JPG" alt="不二情书" width="154" height="205"/></a><div><a href="ShowVideo.html"> <h4>不二情书</h4></a><em> - 7.5分</em> <div class="leixing"><span>类型：</span><a href="">喜剧</a><a href="">爱情</a></div></div></div>'
+                    var bian='<div class="top_pailie"> <a href=""class="pai_a"  style="background:rgb(224,224,224)">'+num+'</a> <div class="img_top"> <img alt="" src="'+imgsrc[i]+'" width="100px" height="150px"> </div> <div class="top_xinxi"> <d1> <dt> <h4 ><a href="../movie/ShowVideo.html" data-value="'+moivesrc[i]+'">'+moviename[i]+'</a>'+movieEnglish[i]+' </h4> </dt> <dd> <ul> <li>导演:<a href="">'+daoyuan[i]+'</a></li> <li>主演：<a href="">'+zhuyuan[i]+'</a>/<a href="">摩根·弗里曼</a>/<a href="">鲍勃·冈顿</a></li> <li>上映日期：<span>'+date[i]+'</span></li> </ul> </dd> </d1> </div> <div class="top_fenshu"><strong class="fenshu">'+fenshu[i]+'</strong></div> </div>';
+                    $(bian).appendTo(".top_100");
+                }
+         })
+
+        </script>
+        <div class="top_pailie">
+            <a href="" class="pai_a">1</a>
+            <div class="img_top">
+                <img alt="" src="http://r3.ykimg.com/050E00005355D7B167379F50CA08A983" width="100px" height="150px">
+            </div>
+            <div class="top_xinxi">
+                <d1>
+                    <dt>
+                    <h4 ><a href="">肖申克的救赎</a> The Shawshank Redemption</h4>
+                    </dt>
+                    <dd>
+                        <ul>
+                            <li>导演：<a href="">弗兰克·德拉邦特</a></li>
+                            <li>主演：<a href="">蒂姆·罗宾斯</a>/<a href="">摩根·弗里曼</a>/<a href="">鲍勃·冈顿</a></li>
+                            <li>上映日期：<span>1994</span></li>
+                        </ul>
+                    </dd>
+                </d1>
+            </div>
+            <div class="top_fenshu"><strong class="fenshu">9.6</strong></div>
+        </div>
+        <div class="top_pailie">
+            <a href="" class="pai_a" style="background: forestgreen">2</a>
+            <div class="img_top">
+                <img alt="" src="http://ww3.sinaimg.cn/large/005yyi5Jjw1emop7afcpej30730a0q3l.jpg" width="100px" height="150px">
+            </div>
+            <div class="top_xinxi">
+                <d1>
+                    <dt>
+                    <h4 ><a href="">这个杀手不太冷
+                    </a> The Shawshank Redemption</h4>
+                    </dt>
+                    <dd>
+                        <ul>
+                            <li>导演：<a href="">弗兰克·德拉邦特</a></li>
+                            <li>主演：<a href="">蒂姆·罗宾斯</a>/<a href="">摩根·弗里曼</a>/<a href="">鲍勃·冈顿</a></li>
+                            <li>上映日期：<span>1994</span></li>
+                        </ul>
+                    </dd>
+                </d1>
+            </div>
+            <div class="top_fenshu"><strong class="fenshu">9.4</strong></div>
+        </div>
+        <div class="top_pailie">
+            <a href="" class="pai_a" style="background:dodgerblue">3</a>
+            <div class="img_top">
+                <img alt="" src="http://r2.ykimg.com/050E000053548ED267379F510C0061FA" width="100px" height="150px">
+            </div>
+            <div class="top_xinxi">
+                <d1>
+                    <dt>
+                    <h4 ><a href="">阿甘正传
+                    </a> The Shawshank Redemption</h4>
+                    </dt>
+                    <dd>
+                        <ul>
+                            <li>导演：<a href="">弗兰克·德拉邦特</a></li>
+                            <li>主演：<a href="">蒂姆·罗宾斯</a>/<a href="">摩根·弗里曼</a>/<a href="">鲍勃·冈顿</a></li>
+                            <li>上映日期：<span>1994</span></li>
+                        </ul>
+                    </dd>
+                </d1>
+            </div>
+            <div class="top_fenshu"><strong class="fenshu">9.4</strong></div>
+        </div>
+
+    </div>
+</section>
+<script>
+    $(document).ready(function(){
+        $(".top_pailie").find("a").click(function(){
+            try {
+                var src = $(this).attr("data-value");
+                if (src != "") {
+                    sessionStorage["src"] = src;
+                } else {
+                    alert("出错了");
+                }
+            } catch (e) {
+                alert(e.message)
+            }
+        })
+    })
+</script>
+<footer>
+    <hr>
+    <p> 免责声明：本网站所有内容都是靠程序在互联网上自动搜集而来，仅供测试和学习交流。  </p>
+    <p>  目前正在逐步删除和规避程序自动搜索采集到的不提供分享的版权影视。</p>
+
+    <p>若侵犯了您的权益，请发邮件通知站长，邮箱：1498026970@qq.com</p>
+
+    <p>友情链接：迅影网</p>
+
+    <p> ♥ 97电影网 · ID97 · VERSION: 1.3.0 · 54.1ms</p>
+
+</footer>
+</body>
+</html>
