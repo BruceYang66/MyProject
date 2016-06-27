@@ -11,7 +11,7 @@
 </head>
 <body>
 <div style="width: 1000px;height: 25px;margin: auto;line-height: 25px;opacity: 0.8">
-    <h4 style="text-align: left;display: inline-block;float: left"><em>欢迎来到PVideos电影首页,我们因为电影而相聚。</em></h4> <h5 style="text-align: right;display: inline-block;float: right"><span>我的收藏-</span>> <a href="http://weibo.com/u/5026812951/home?wvr=5" target="_blank" id="weibo">关注我的微博</a></h5>
+    <h4 style="text-align: left;display: inline-block;float: left"><em>欢迎来到PVideos电影首页,我们因为电影而相聚。</em></h4> <h5 style="text-align: right;display: inline-block;float: right"><span>我的收藏-</span>> <a href="http://weibo.com/5026812951/profile?rightmod=1&wvr=6&mod=personinfo&is_all=1" target="_blank" id="weibo">关注我的微博</a></h5>
 </div>
 <hr style="opacity: 0.5;">
 <header id="header">
@@ -99,7 +99,7 @@
     <article>
         <section>
          <div><h1 class="h1">热门电影</h1><em style="font-size: 1.0em;">更多>></em></div>
-            <div id="remen">
+            <div id="remen" style="margin-top: 10px">
                 <script>
                     $(document).ready(function(){
                         var n=6;
@@ -135,7 +135,28 @@
                 </script>
             </div>
         </section>
+
 <div id="more"><h1>更多精彩电影>></h1></div>
+        <script>
+            $(document).ready(function(){
+                var content_zhu = document.getElementById("zuixin")
+                var jiazai = document.getElementById("more");
+                var sum = Math.ceil(parseInt(content_zhu.scrollHeight) - parseInt(content_zhu.offsetHeight))//比原来的长多少
+                var zongchang = Math.ceil(parseInt(content_zhu.scrollHeight));//总长
+                var hangshu =  Math.ceil(sum / 248);//多少行
+                var i = 2;
+                jiazai.onclick = function () {
+                    var num = 1065;//开始
+                    if (hangshu > i) {
+                        num += 250 * i;
+                        $("#zuixin").animate({ height: '' + num + 'px' }, "slow");
+                    } else {
+                        //alert("更多精彩电影")
+                    }
+                    i +=2;
+                }
+            })
+        </script>
     </article>
 </section>
 <script>

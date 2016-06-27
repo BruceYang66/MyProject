@@ -62,14 +62,16 @@
             <div id="zuixin">
                 <script>
                     $(document).ready(function(){
-                        var n=30;
+                        var n=42;
                         var moivesrc=["http://player.youku.com/player.php/sid/XMTYxMDkwNzczMg==/partnerid/d50c8689ebe03441/v.swf"]
                         var imgsrc=["../images/movie/buer.JPG"]
                         var moviename=["不二情书"]
+                        //for(var j=0;j<n;j++){
                         for(var i=0;i<n;i++){
                             var bian='<div class="pailie"> <a href="../movie/ShowVideo.html"  data-value='+moivesrc[0]+'> <img src='+imgsrc[0]+' alt="不二情书" width="154" height="205"/> </a> <div> <a href="../movie/ShowVideo.html" data-value='+moivesrc[0]+'> <h4>'+moviename[0]+'</h4></a><em> - 7.5分</em><div class="leixing"><span>类型：</span><a href="">喜剧</a><a href="">爱情</a></div> </div> </div>'
                             $(bian).appendTo("#zuixin");
                         }
+                        //}
                     })
                 </script>
                 <script>
@@ -95,9 +97,42 @@
                     })
                 </script>
             </div>
+            <div id="pages" style="height: 30px; width: 100%; text-align:left; margin-bottom: 20px;cursor: pointer"></div>
+            <!-- 分页代码-->
+            <script>
+                var obj = document.getElementById("zuixin");  //获取内容层
+                var pages = document.getElementById("pages");         //获取翻页层
+                var pgindex = 1;                                      //当前页
+                window.onload = function ()                             //重写窗体加载的事件
+                {
+                    var allpages = Math.ceil(parseInt(obj.scrollHeight) / parseInt(obj.offsetHeight));//获取页面数量
+                    pages.innerHTML = "<b>共" + allpages + "页  </b>";     //输出页面数量
+                    for (var i = 1; i <= allpages; i++) {
+                        //pages.innerHTML += "<a href=\"javascript:showPage('" + i + "');\">第" + i + "页</a> ";
+                        pages.innerHTML += "<a href=\"javascript:showPage('" + i + "');\"> " + i + "</a> ";
+                        //循环输出第几页
+
+                    }
+                    if (obj.scrollHeight > obj.offsetHeight) {
+                        pages.innerHTML += "      <b onclick=\"gotopage('-1');\">上一页</b>  <b onclick=\"gotopage('1');\">下一页</b>"
+                    }
+                }
+                function gotopage(value) {
+                    try {
+                        value == "-1" ? showPage(pgindex - 1) : showPage(pgindex + 1);
+                    } catch (e) {
+
+                    }
+                }
+                function showPage(pageINdex) {
+                    obj.scrollTop = (pageINdex - 1) * parseInt(obj.offsetHeight);                                                                  //根据高度，输出指定的页
+                    pgindex = pageINdex;
+                }
+
+            </script>
         </section>
   <!-- <div id="more"><h1>更多精彩电影>></h1></div>-->
-   <div style=""><img src="../images/movie/fenye.JPG" alt=""></div>
+<!--   <div style=""><img src="../images/movie/fenye.JPG" alt=""></div>-->
 
     </article>
 </section>

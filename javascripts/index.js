@@ -13,7 +13,29 @@ $(document).ready(function(){
         localStorage.pagecount=1;
     }
     $("#liuliang").html(localStorage.pagecount)*/
+    //----------搜索---------
+    $("#btn_search").click(function(){
+        if($("#search_text").val()!=""){
+            $("section>div:nth-child(1)").css("display","none")
+           $(".pailie").hide();
+            $(".pailie").find('h4:contains('+$("#search_text").val()+')').parents(".pailie").show()
+           if($(".pailie").find('h4:contains('+$("#search_text").val()+')').html()==undefined){
+              alert("No related movie")
+           }
+        }else{
+            alert("Please enter the content ")
+        }
+    })
 })
+//--------------------获取更多的电影----------------------
+/*$(document).ready(function(){
+    var height=248*4;
+    $("#zuixin").css({height:height+"px"})
+    alert("sdf")
+    $("#more").click(function(){
+        $("#zuixin").css("height",height+height/2+"px")
+    })
+})*/
 /*
  图片滚动*/
 
