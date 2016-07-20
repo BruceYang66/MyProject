@@ -2,193 +2,97 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="stylesheets/index.css" type="text/css">
-    <script type="text/javascript" src="javascripts/Script/jquery.js"></script>
-<script type="text/javascript" src="javascripts/index.js"></script>
-<script type="text/javascript" src="javascripts/Script/jquery.cookie.js"></script>
-<!--    <title>电影主页</title>-->
-    <title>97电影网,高清电影下载,PVideos,97资源站,免费电影下载,不用下载播放器的电影网站</title>
+    <meta name="keywords" content="BruceYang Yang" />
+    <title>欢迎来到BruceYang网站</title>
+    <link rel="stylesheet" href="stylesheets/index.css" type="text/css"/>
+    <script src="javascripts/Script/jquery.js"></script>
+    <script src="javascripts/index.js"></script>
+    <style>
+    </style>
 </head>
 <body>
-<div style="width: 1000px;height: 25px;margin: auto;line-height: 25px;opacity: 0.8">
-    <h4 style="text-align: left;display: inline-block;float: left"><em>欢迎来到PVideos电影首页,我们因为电影而相聚。</em></h4> <h5 style="text-align: right;display: inline-block;float: right"><span>我的收藏-</span>> <a href="http://weibo.com/5026812951/profile?rightmod=1&wvr=6&mod=personinfo&is_all=1" target="_blank" id="weibo">关注我的微博</a></h5>
-</div>
-<hr style="opacity: 0.5;">
-<header id="header">
-    <div id="biaoti">
-        <div class="biaoti_1"><h1>PVideos</h1></div>
-        <div class="biaoti_search">
-            <input type="text" id="search_text" placeholder="电影搜索">
-            <input type="button" id="btn_search" value="搜索">
-        </div>
-    </div>
-    <div id="daohang">
-        <nav id="nav">
-            <ul>
-                <li><a href="index.html">首页</a></li>
-                <li><a href="movie/movie.html">电影</a></li>
-                <li><a href="movie/sharevip.html">迅雷VIP分享</a></li>
-                <li><a href="movie/Top100_douban.html">豆瓣TOP250</a></li>
-                <li><a href="movie/remen.html">最近热门</a></li>
+<header>
+<nav id="nav">
+    <ul class="ul1">
+        <li><a href="index.html">首页</a></li>
+        <li><a href="#">个人作品</a>
+            <ul class="ul2">
+                <li><a href="JinDong.html" target="_blank">作品1-京东首页</a></li>
+                <li><a href="Movie.html" target="_blank">作品2-电影网</a></li>
             </ul>
-            <ul>
-                <li><a href="">登录</a></li>
-                <li><a href="">注册</a></li>
-            </ul>
-        </nav>
-    </div>
+        </li>
+        <li id="jianli" onclick="show_jianli()"><a target="_blank">个人简历</a></li>
+    </ul>
+</nav>
+
 </header>
-<section class="section">
-    <article class="article1">
-        <div class="img_quan">
-            <div class="img_active">
-                <a target="_blank" href="http://www.id97.com/videos/resource/id/179388.html">
-                    <img width="100%"
-                         src="http://ww1.sinaimg.cn/large/0069qWFHgw1f51z67nkhvj30s20ciacx.jpg"
-                         alt="钢刀迅雷下载"></a>
-                <div class="carousel-caption">
-                    钢刀迅雷下载
-                </div>
-            </div>
-            <div class="img_active">
-                <a target="_blank" href="http://www.id97.com/videos/resource/id/178676.html"><img width="100%" src="http://ww3.sinaimg.cn/large/0069qWFHgw1f55z1gk46yj30s20ciad0.jpg" alt="超脑48小时高清迅雷下载"></a>
-                <div class="carousel-caption">
-                    超脑48小时高清迅雷下载
-                </div>
-            </div>
-            <div class="img_active">
-                <a target="_blank" href="http://www.id97.com/videos/resource/id/174910.html"><img width="100%" src="http://ww3.sinaimg.cn/large/0069qWFHgw1f509aesqx6j30s20cijuu.jpg" alt="分歧者3迅雷下载"></a>
-                <div class="carousel-caption">
-                    分歧者3迅雷下载
-                </div>
-            </div>
-            <div class="img_active">
-                <a target="_blank" href="http://www.id97.com/videos/resource/id/177149.html"><img width="100%" src="http://ww1.sinaimg.cn/large/0069qWFHgw1f4ydv7991mj30s20cidl7.jpg" alt="猎神：冬日之战高清迅雷下载"></a>
-                <div class="carousel-caption">
-                    猎神：冬日之战高清迅雷下载
-                </div>
-            </div>
-            <div class="img_active">
-                <a target="_blank" href="http://www.id97.com/videos/resource/id/177833.html"><img width="100%" src="http://ww4.sinaimg.cn/large/0069qWFHgw1f554p129tmj30s20ci42o.jpg" alt="大唐玄奘迅雷下载"></a>
-                <div class="carousel-caption">
-                    大唐玄奘迅雷下载
-                </div>
-            </div>
-
+<section>
+    <div class="section">
+    <article class="section_article1_gundong">
+        <ul class="gundong_img">
+            <li class="selected_img"><a href=""><img src="images/index/gundong/paobu.jpg" alt=""/></a></li>
+            <li><a href=""><img src="images/index/gundong/quanji.jpg" alt=""/></a></li>
+            <li><a href=""><img src="images/index/gundong/zuqiu.jpg" alt=""/></a></li>
+            <li><a href=""><img src="images/index/gundong/BruceLee.jpg" alt=""/></a></li>
+            <li><a href=""><img src="images/index/gundong/langqiu.jpg" alt=""/></a></li>
+            <li><a href=""><img src="images/index/gundong/paoche.jpg" alt=""/></a></li>
+        </ul>
+        <ul class="xiaoyuandian">
+            <li class="cur">1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+        </ul>
+        <div class="slider-page" style="display: block">
+            <a class="prev">< </a>
+            <a class="next"> ></a>
         </div>
-        <div class="art_ol">
-            <ol>
-                <li class="baise"></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ol>
-        </div>
-<!-- -&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;下一张==》上一张-->
-            <div id="previous">
-                <h1>< </h1>
-            </div>
-            <div id="next">
-                <h1>> </h1>
-            </div>
-
     </article>
-    <!-----------------热门电影更多内容-------------->
-
-    <article>
-        <section>
-         <div><h1 class="h1">热门电影</h1><em style="font-size: 1.0em;">更多>></em></div>
-            <div id="remen" style="margin-top: 10px">
-                <script>
-                    $(document).ready(function(){
-                        var n=6;
-                        var moivesrc=["http://player.youku.com/player.php/sid/XNjk5MjE2NTc2/partnerid/d50c8689ebe03441/v.swf"]
-                       var imgsrc=["http://r1.ykimg.com/054204085397426A6A0A410FB018B700"]
-                         var moviename=["澳门风云2"]
-                        for(var i=0;i<n;i++){
-                            var bian='<div class="pailie"> <a href="movie/ShowVideo.html" data-value='+moivesrc[0]+'> <img src='+imgsrc[0]+' alt="X战警" width="154" height="205"/> </a> <div> <a href="movie/ShowVideo.html" data-value='+moivesrc[0]+'> <h4>'+moviename[0]+'</h4></a><em> - 8.2分</em> <div class="leixing"><span>类型：</span><a href="">科幻</a><a href="">动作</a></div> </div> </div>'
-                            $(bian).appendTo("#remen");
-                        }
-                    })
-                </script>
-            </div>
-            <div style="background:#f2f8fc;width: 100%;height: 35px;margin: auto;clear: both;margin-top: 5px"></div>
-        </section>
-        <script>
-        </script>
-     <!--   ==============;最新内容- -->
-        <section>
-            <div><h1 class="h1">最新电影</h1><em style="font-size: 1.0em;">更多>></em></div>
-            <div id="zuixin">
-                <script>
-                    $(document).ready(function(){
-                        var n=36;
-                       var moivesrc=["http://player.youku.com/player.php/sid/XMTYxMDkwNzczMg==/partnerid/d50c8689ebe03441/v.swf"]
-                        var imgsrc=["images/movie/buer.JPG"]
-                        var moviename=["不二情书"]
-                        for(var i=0;i<n;i++){
-                            var bian='<div class="pailie"> <a href="movie/ShowVideo.html"  data-value='+moivesrc[0]+'> <img src='+imgsrc[0]+' alt="不二情书" width="154" height="205"/> </a> <div> <a href="movie/ShowVideo.html" data-value='+moivesrc[0]+'> <h4>'+moviename[0]+'</h4></a><em> - 7.5分</em><div class="leixing"><span>类型：</span><a href="">喜剧</a><a href="">爱情</a></div> </div> </div>'
-                            $(bian).appendTo("#zuixin");
-                        }
-                    })
-                </script>
-            </div>
-        </section>
-
-<div id="more"><h1>更多精彩电影>></h1></div>
-        <script>
-            $(document).ready(function(){
-                var content_zhu = document.getElementById("zuixin")
-                var jiazai = document.getElementById("more");
-                var sum = Math.ceil(parseInt(content_zhu.scrollHeight) - parseInt(content_zhu.offsetHeight))//比原来的长多少
-                var zongchang = Math.ceil(parseInt(content_zhu.scrollHeight));//总长
-                var hangshu =  Math.ceil(sum / 248);//多少行
-                var i = 2;
-                jiazai.onclick = function () {
-                    var num = 1065;//开始
-                    if (hangshu > i) {
-                        num += 250 * i;
-                        $("#zuixin").animate({ height: '' + num + 'px' }, "slow");
-                    } else {
-                        //alert("更多精彩电影")
-                    }
-                    i +=2;
-                }
-            })
-        </script>
-    </article>
+</div>
 </section>
-<script>
-    //---------------------页面跳转获取视屏===共同拥有
-    $(document).ready(function(){
-        $(".pailie").find("a").click(function(){
-            try {
-                var src = $(this).attr("data-value");
-                var moviename=$(this).parents(".pailie").find("h4").html();
-                if (src != "") {
-                    sessionStorage["src"] = src;
-                    sessionStorage["moviename"]=moviename;
-                } else {
-                    alert("出错了");
-                }
-            } catch (e) {
-                alert(e.message)
-            }
-        })
-    })
-</script>
-<footer>
-    <hr>
-    <p> 免责声明：本网站所有内容都是靠程序在互联网上自动搜集而来，仅供测试和学习交流。  </p>
-    <p>  目前正在逐步删除和规避程序自动搜索采集到的不提供分享的版权影视。</p>
-
-    <p>若侵犯了您的权益，请发邮件通知站长，邮箱：1498026970@qq.com</p>
-
-    <p>友情链接：迅影网</p>
-
-    <p> ♥ 97电影网 · ID97 · VERSION: 1.3.0 · 54.1ms</p>
-
+<footer class="footer">
 </footer>
+
+<div id="zhiding"  onclick="zhiding()">
+    <img src="images/index/zhiding.JPG" width="50" height="36" alt=""/>
+</div>
+<script>
+    try {
+        /*绝对窗体导航*/
+        var nav1=document.getElementById("nav")
+        window.onscroll = function () {
+            var top = document.documentElement.scrollTop || document.body.scrollTop;//body滚动的top
+            if(top>0){
+                nav1.className="nav_fixed"
+                $("#zhiding").fadeIn();
+            }else{
+                nav1.className="nav_static"
+                $("#zhiding").fadeOut();
+            }
+        }
+        /*置顶*/
+        function zhiding(){
+            nav1.className="nav_static"
+            nav1 .scrollIntoView(true);
+        }
+    } catch (e) {
+        alert(e.message)
+    }
+</script>
+<script>
+    /*
+     设置访问权*/
+    function show_jianli(){
+        var name1=huoname()
+        var name=prompt("查看简历，请问你知道我的中式英文名吗?","");
+        if(name==name1){
+            window.location.href="jianli/jianli.html"
+        }else if(name!=name1&name!=null){
+            alert("不好意思！你访问权不够")
+        }
+    }
+</script>
 </body>
 </html>

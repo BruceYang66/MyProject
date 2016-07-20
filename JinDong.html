@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>京东商城</title>
+    <link rel="stylesheet" type="text/css" href="stylesheets/JinDong.css">
+    <script type="text/javascript" src="javascripts/Script/jquery.js"></script>
+    <script type="text/javascript" src="javascripts/jindong.js"></script>
+
+    <script src="javascripts/Script/angular.min.js"></script>
+</head>
+<body>
+<div class="all">
+<div class="title_top" id="title_top">
+<div class="title_top_nav">
+    <div class="title_top_nav_address" ng-app="myaddress" ng-controller="address" ng-init="name='北京'">
+        <!--<div>
+            <div class="address_sonzi"> 送至：<span title="北京">北京</span><span> ></span></div>
+        </div>-->
+        <div>
+            <div class="address_sonzi"> 送至：<span title='{{name}}'>{{name}}</span><span class="zhuan"> ></span></div>
+        </div>
+        <div class="dizhi_quanbu">
+            <a class="dizhi_a" ng-repeat="x in names">{{x}}</a>
+        </div>
+        <script>
+            var app=angular.module("myaddress",[]);
+            app.controller('address',function($scope){
+            $scope.names=["北京","湖北","武汉","北海","湖d北","武d汉","北d海","湖e北","武e汉","北e海","湖g北","武g汉","北h海","湖n北","武含汉","北f海"];
+            });
+            $(document).ready(function(){
+                $(".address_sonzi,.dizhi_quanbu").hover(function(){
+                    $(".dizhi_quanbu").addClass("show_dizhi")
+
+                },function(){
+                    $(".dizhi_quanbu").removeClass("show_dizhi")
+                })
+            })
+        </script>
+    </div>
+    <ul class="title_top_nav_you">
+        <li><a href="">你好,请登录</a> <a style="color:#ef3b48" href="">免费注册</a></li>
+        <li></li>
+        <li><a href="">我的订单</a></li>
+        <li></li>
+        <li class="bai">
+         <div><a href="">我的京东</a><span> ></span></div>
+        <div class="xia">
+            <h3>你好！</h3>
+        </div>
+        </li>
+        <li></li>
+        <li><a href="">京东会员</a></li>
+        <li></li>
+        <li><a href="">企业采购</a></li>
+        <li></li>
+        <li class="bai">
+            <div><a href="">手机京东</a><span> ></span></div>
+            <div class="xia">
+                <h3>手机京东喔！</h3>
+            </div>
+        </li>
+        <li></li>
+        <li class="bai">
+            <div><a href="">关注京东</a><span> ></span></div>
+            <div class="xia">
+                <h3>关注京东！</h3>
+            </div>
+        </li>
+        <li></li>
+        <li class="bai">
+            <div><a href="">客户服务</a><span> ></span></div>
+            <div class="xia">
+                <h3>客户服务！</h3>
+            </div>
+        </li>
+        <li></li>
+        <li class="bai">
+            <div><a href="">网站导航</a><span> ></span></div>
+            <div class="xia">
+                <h3>网站导航！</h3>
+            </div>
+        </li>
+        <li></li>
+    </ul>
+</div>
+</div>
+    <div class="guanggao1">
+        <a href=""><img src="images/JinDong_img/guangao1_.jpg" width="100%" height="80px" alt=""/></a>
+        <span class="guangbi"><img src="images/JinDong_img/guanbi_.png" width="20px" height="20px" alt=""/></span>
+    </div>
+    <script>
+        $(".guangbi").click(function(){
+            $(".guanggao1").css({"display":"none"})
+        })
+    </script>
+<header class="header">
+    <div class="title_center">
+        <div class="title_center_logo"><a href="//www.jd.com/"><img src="images/JinDong_img/logo.jpg" alt="京东logo"/></a></div>
+        <div class="title_center_ce">
+                <div class="title_center_ce_search">
+                    <input type="text" id="search_text" placeholder="闪购特卖"/>
+                    <input type="button" id="search" value="搜索">
+                </div>
+                <div class="title_center_ce_nav">
+                    <ul>
+                        <li><a id="style_colored" href="">抢满减卷</a></li>
+                        <li><a href="">低至9.9</a></li>
+                        <li><a href="">9.9免邮</a></li>
+                        <li><a href="">9.9团购</a></li>
+                        <li><a href="">每150减50</a></li>
+                        <li><a href="">小学生书包</a></li>
+                        <li><a href="">西洋参片</a></li>
+                        <li><a href="">0元试用</a></li>
+                        <li><a href="">单鞋女</a></li>
+                    </ul>
+                </div>
+        </div>
+        <div class="title_center_gouwuche">
+            <a href=""><img src="images/JinDong_img/gouwuche_.png" alt=""/></a>
+        </div>
+    </div>
+    <div class="title_nav">
+        <ul>
+            <li><a href=""><img src="images/JinDong_img/fenlei_.png" width="210" height="44"></a></li>
+            <li><a href="">服装城</a></li>
+            <li><a href="">美妆馆</a></li>
+            <li><a href="">京东超市</a></li>
+            <li><a href="">生鲜</a></li>
+            <li><a href="">全球购</a></li>
+            <li><a href="">闪购</a></li>
+            <li><a href="">团购</a></li>
+            <li><a href="">拍卖</a></li>
+            <li><a href="">金融</a></li>
+        </ul>
+    </div>
+</header>
+<section class="section">
+    <article class="section_article1">
+        <!--左边栏-->
+        <aside class="section_article1_left">
+            <div class="section_article1_left_nav">
+                <div><h3><a href="">家用电器</a><i>></i></h3>
+                    <div class="item-jiayongdianqi">
+                        <div>
+                            <h2>家用电器</h2>
+                        </div>
+                        <div>
+                            <d1 class="fore1">
+                                <dt>
+                                    <a href="#"></a>
+                                </dt>
+                                <dd></dd>
+                            </d1>
+                        </div>
+                    </div>
+                </div>
+                <div><h3><a href="">手机、</a><a href="">数码、</a><a href="">京东通信</a><i>></i></h3>
+                    <div class="item-jiayongdianqi">
+                        <div>
+                         <h2>手机</h2>
+                        </div>
+                        <div>
+                            <d1 class="fore1">
+                                <dt>
+                                    <a href="#"></a>
+                                </dt>
+                                <dd></dd>
+                            </d1>
+                        </div>
+                    </div>
+                </div>
+                <div><h3><a href="">电脑、</a><a href="">办公</a><i>></i></h3>
+                    <div class="item-jiayongdianqi">
+                        <div>
+                            <h2>电脑、办公</h2>
+                        </div>
+                        <div>
+                            <d1 class="fore1">
+                                <dt>
+                                    <a href="#"></a>
+                                </dt>
+                                <dd></dd>
+                            </d1>
+                        </div>
+                    </div>
+                </div>
+                <div><h3><a href="">家居、</a><a href="">家具、</a><a href="">家装、</a><a href="">厨具、</a><i>></i> </h3>
+                    <div class="item-jiayongdianqi">
+                        <div>
+                            <h2>家具、家装</h2>
+                        </div>
+                        <div>
+                            <d1 class="fore1">
+                                <dt>
+                                    <a href="#"></a>
+                                </dt>
+                                <dd></dd>
+                            </d1>
+                        </div>
+                    </div>
+                </div>
+                <div><h3><a href="">男装、</a><a href="">女装、</a><a href="">童装、</a><a href="">内衣</a><i>></i></h3>
+                    <div class="item-jiayongdianqi">
+                        <div>
+                            <h2>男装、女装</h2>
+                        </div>
+                        <div>
+                            <d1 class="fore1">
+                                <dt>
+                                    <a href="#"></a>
+                                </dt>
+                                <dd></dd>
+                            </d1>
+                        </div>
+                    </div>
+                </div>
+                <div><h3><a href="">个护化妆、</a><a href="">清洁用品、</a><a href="">宠物</a><i>></i></h3>
+                    <div class="item-jiayongdianqi">
+                        <div>
+                            <h2>个护化妆、清洁用品</h2>
+                        </div>
+                        <div>
+                            <d1 class="fore1">
+                                <dt>
+                                    <a href="#"></a>
+                                </dt>
+                                <dd></dd>
+                            </d1>
+                        </div>
+                    </div>
+                </div>
+                <div><h3><a href="">鞋靴、</a><a href="">箱包、</a><a href="">珠宝、</a><a href="">奢侈品</a><i>></i></h3>
+                    <div class="item-jiayongdianqi">
+                        <div>
+                            <h2>个护化妆、清洁用品</h2>
+                        </div>
+                        <div>
+                            <d1 class="fore1">
+                                <dt>
+                                    <a href="#"></a>
+                                </dt>
+                                <dd></dd>
+                            </d1>
+                        </div>
+                    </div>
+                </div>
+                <div><h3><a href="">运动户外、</a><a href="">钟表、</a><i>></i></h3>
+                    <div class="item-jiayongdianqi">
+                        <div>
+                            <h2>运动户外、钟表</h2>
+                        </div>
+                        <div>
+                            <d1 class="fore1">
+                                <dt>
+                                    <a href="#"></a>
+                                </dt>
+                                <dd></dd>
+                            </d1>
+                        </div>
+                    </div>
+                </div>
+                <div><h3><a href="">汽车</a><a href="">汽车用品</a><i>></i></h3>
+                    <div class="item-jiayongdianqi">
+                        <div>
+                            <h2>汽车、汽车用品</h2>
+                        </div>
+                        <div>
+                            <d1 class="fore1">
+                                <dt>
+                                    <a href="#"></a>
+                                </dt>
+                                <dd></dd>
+                            </d1>
+                        </div>
+                    </div>
+                </div>
+                <div><h3><a href="">母婴、</a><a href="">玩具乐器</a><i>></i></h3>
+                    <div class="item-jiayongdianqi">
+                        <div>
+                            <h2>母婴、玩具乐器</h2>
+                        </div>
+                        <div>
+                            <d1 class="fore1">
+                                <dt>
+                                    <a href="#"></a>
+                                </dt>
+                                <dd></dd>
+                            </d1>
+                        </div>
+                    </div>
+                </div>
+                <div><h3><a href="">食品、</a><a href="">酒类、</a><a href="">生鲜、</a><a href="">特产</a><i>></i></h3>
+                    <div class="item-jiayongdianqi">
+                        <div>
+                            <h2>食品、酒类</h2>
+                        </div>
+                        <div>
+                            <d1 class="fore1">
+                                <dt>
+                                    <a href="#"></a>
+                                </dt>
+                                <dd></dd>
+                            </d1>
+                        </div>
+                    </div>
+                </div>
+                <div><h3><a href="">医药保健</a><i>></i></h3>
+                    <div class="item-jiayongdianqi">
+                        <div>
+                            <h2>医药保健</h2>
+                        </div>
+                        <div>
+                            <d1 class="fore1">
+                                <dt>
+                                    <a href="#"></a>
+                                </dt>
+                                <dd></dd>
+                            </d1>
+                        </div>
+                    </div>
+                </div>
+                <div><h3><a href="">图书、</a><a href="">音像、</a><a href="">电子书</a><i>></i></h3>
+                    <div class="item-jiayongdianqi">
+                        <div>
+                            <h2>图书、音像</h2>
+                        </div>
+                        <div>
+                            <d1 class="fore1">
+                                <dt>
+                                    <a href="#"></a>
+                                </dt>
+                                <dd></dd>
+                            </d1>
+                        </div>
+                    </div>
+                </div>
+                <div><h3><a href="">彩票、</a><a href="">旅行、</a><a href="">充值、</a><a href="">票务</a><i>></i></h3>
+                    <div class="item-jiayongdianqi">
+                        <div>
+                            <h2>彩票、旅行</h2>
+                        </div>
+                        <div>
+                            <d1 class="fore1">
+                                <dt>
+                                    <a href="#"></a>
+                                </dt>
+                                <dd></dd>
+                            </d1>
+                        </div>
+                    </div>
+                </div>
+                <div><h3><a href="">理财、</a><a href="">众筹、</a><a href="">白条、</a><a href="">保险</a><i>></i></h3>
+                    <div class="item-jiayongdianqi">
+                        <div>
+                            <h2>理财</h2>
+                        </div>
+                        <div>
+                            <d1 class="fore1">
+                                <dt>
+                                    <a href="#"></a>
+                                </dt>
+                                <dd></dd>
+                            </d1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <section class="section_article1_gundong">
+            <ul class="gundong_img">
+                <li class="selected_img"><a href=""><img src="images/JinDong_img/gundong/1_.png" alt=""/></a></li>
+                <li><a href=""><img src="images/JinDong_img/gundong/2_.png" alt=""/></a></li>
+                <li><a href=""><img src="images/JinDong_img/gundong/3_.png" alt=""/></a></li>
+                <li><a href=""><img src="images/JinDong_img/gundong/4_.png" alt=""/></a></li>
+                <li><a href=""><img src="images/JinDong_img/gundong/5_.png" alt=""/></a></li>
+                <li><a href=""><img src="images/JinDong_img/gundong/6_.png" alt=""/></a></li>
+            </ul>
+            <ul class="xiaoyuandian">
+                <li class="cur">1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+            </ul>
+            <div class="slider-page" style="display: block">
+                <a class="prev">< </a>
+                <a class="next"> ></a>
+            </div>
+        </section>
+        <aside class="section_article1_right">
+            <div class="jindongkuaibao">
+               <div class="jindkb1_t"><h2>京东快报</h2> <a><span>更多></span></a> </div>
+                <div class="jindkb1_c">
+                    <a><span>[特惠]</span>"颜王" 驾到，元气满格！</a>
+                    <a><span>[公告]</span>"地方" 是大法官，元气满格！</a>
+                    <a><span>[特惠]</span>"多个"三个元气满格！</a>
+                    <a><span>[公告]</span>"防守打法" 三个，元气满格！</a>
+                    <a><span>[特惠]</span>"阿萨德刚" 说得，元气满格！</a>
+                </div>
+            </div>
+            <!--滚动右边栏-->
+            <div class="gundong_you">
+                <div class="gundong_you_center">
+                    <ul>
+                        <li><a href=""><img src="images/JinDong_img/gunyou.jpg" alt=""/></a></li>
+                        <li><a href=""><img src="images/JinDong_img/gunyou-15.jpg" alt=""/></a></li>
+                        <li><a href=""><img src="images/JinDong_img/gunyou-16.jpg" alt=""/></a></li>
+                        <li><a href=""><img src="images/JinDong_img/gunyou-17.jpg" alt=""/></a></li>
+                        <li><a href=""><img src="images/JinDong_img/gunyou-18.jpg" alt=""/></a></li>
+                        <li><a href=""><img src="images/JinDong_img/gunyou-19.jpg" alt=""/></a></li>
+                        <li><a href=""><img src="images/JinDong_img/gunyou-20.jpg" alt=""/></a></li>
+                        <li><a href=""><img src="images/JinDong_img/gunyou-21.jpg" alt=""/></a></li>
+                        <li><a href=""><img src="images/JinDong_img/gunyou-22.jpg" alt=""/></a></li>
+                        <li><a href=""><img src="images/JinDong_img/gunyou-23.jpg" alt=""/></a></li>
+                        <li><a href=""><img src="images/JinDong_img/gunyou-24.jpg" alt=""/></a></li>
+                        <li><a href=""><img src="images/JinDong_img/gunyou-25.jpg" alt=""/></a></li>
+                    </ul>
+                    <div class="gun_shang">
+                        <div id="shang_dt"><span>话费</span><span>机票</span><span>电影票</span><span>游戏</span></div>
+                     <!--  注意有点问题。类名不要建重复。 已解决-->
+                        <div id="shang_dd">
+                            <div id="item1" class="hide">
+                                <br>
+                                <h3>话费充值</h3>
+                                <br>
+                             <p> <span>号码：</span><input type="number" placeholder="移动、联通、电信" width="100"></p>
+                                <br>
+                               <p><span>面值：</span><input type="number" placeholder="" width="100"></p>
+                            </div>
+                            <div id="item2" class="hide">
+                                <img src="images/JinDong_img/zanshi/jipiao_.png" alt=""/>
+                            </div>
+                            <div id="item3" class="hide">
+                                <img src="images/JinDong_img/zanshi/dianying_.png" alt=""/>
+                            </div>
+                            <div id="item4" class="hide">
+                                <img src="images/JinDong_img/zanshi/youxi_.png" alt=""/>
+                            </div>
+                        </div>
+                        <span class="guangbi_x">x</span>
+
+                    </div>
+                </div>
+            </div>
+            <script>
+                $(document).ready(function(){
+                    $(".gundong_you_center>ul li").hover(function(){
+                        if($(this).index()<4){
+                        $(".gun_shang").slideDown()
+                        $("#shang_dt span").eq($(this).index()).addClass("select_span").siblings().removeClass();
+                         $("#shang_dd div").eq($(this).index()).addClass("show").siblings().removeClass("show");
+                        }
+                    })
+                    /*关闭*/
+                    $(".guangbi_x").click(function(){
+                        $(".gun_shang").slideUp();
+                    })
+                    //选择item
+                    $("#shang_dt span").hover(function(){
+                        $(this).addClass("select_span").siblings().removeClass()
+                        $("#shang_dd div").eq($(this).index()).addClass("show").siblings().removeClass("show");
+                    })
+                })
+            </script>
+            <div class="gundong_you_bottom"><img src="images/JinDong_img/gun_gg_r.jpg" alt=""/></div>
+        </aside>
+    </article>
+    <!--&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;-->
+    <article class="section_article2">
+
+        <div class="tuijian">
+            <div class="tuijian_left"><a href=""><img src="images/JinDong_img/gundong2/gundongx-1.jpg" alt=""/></a></div>
+            <div class="tuijian_right">
+            <div class="tuijian_gundong">
+                <!--滚动-推荐-->
+                <ul>
+                    <li><a href=""><img src="images/JinDong_img/gundong2/gundongx-1%20(1).jpg" alt=""/></a></li>
+                    <li><a href=""><img src="images/JinDong_img/gundong2/gundongx-1%20(2).jpg" alt=""/></a></li>
+                    <li><a href=""><img src="images/JinDong_img/gundong2/gundongx-1%20(3).jpg" alt=""/></a></li>
+                    <li><a href=""><img src="images/JinDong_img/gundong2/gundongx-1%20(4).jpg" alt=""/></a></li>
+
+                    <li><a href=""><img src="images/JinDong_img/gundong2/gundongx-1%20(3).jpg" alt=""/></a></li>
+                    <li><a href=""><img src="images/JinDong_img/gundong2/gundongx-1%20(4).jpg" alt=""/></a></li>
+                    <li><a href=""><img src="images/JinDong_img/gundong2/gundongx-1%20(2).jpg" alt=""/></a></li>
+                    <li><a href=""><img src="images/JinDong_img/gundong2/gundongx-1%20(3).jpg" alt=""/></a></li>
+
+                    <li><a href=""><img src="images/JinDong_img/gundong2/gundongx-1%20(1).jpg" alt=""/></a></li>
+                    <li><a href=""><img src="images/JinDong_img/gundong2/gundongx-1%20(4).jpg" alt=""/></a></li>
+                    <li><a href=""><img src="images/JinDong_img/gundong2/gundongx-1%20(2).jpg" alt=""/></a></li>
+                    <li><a href=""><img src="images/JinDong_img/gundong2/gundongx-1%20(3).jpg" alt=""/></a></li>
+
+                    <li><a href=""><img src="images/JinDong_img/gundong2/gundongx-1%20(2).jpg" alt=""/></a></li>
+                    <li><a href=""><img src="images/JinDong_img/gundong2/gundongx-1%20(3).jpg" alt=""/></a></li>
+                    <li><a href=""><img src="images/JinDong_img/gundong2/gundongx-1%20(4).jpg" alt=""/></a></li>
+                    <li><a href=""><img src="images/JinDong_img/gundong2/gundongx-1%20(2).jpg" alt=""/></a></li>
+
+                    <li><a href=""><img src="images/JinDong_img/gundong2/gundongx-1%20(1).jpg" alt=""/></a></li>
+                    <li><a href=""><img src="images/JinDong_img/gundong2/gundongx-1%20(4).jpg" alt=""/></a></li>
+                    <li><a href=""><img src="images/JinDong_img/gundong2/gundongx-1%20(2).jpg" alt=""/></a></li>
+                    <li><a href=""><img src="images/JinDong_img/gundong2/gundongx-1%20(3).jpg" alt=""/></a></li>
+                </ul>
+                <div class="slider-page1" style="display: block;">
+                    <a class="prev1">< </a>
+                    <a class="next1"> ></a>
+                </div>
+            </div>
+            </div>
+        </div>
+        <!--猜你喜欢-->
+        <section class="cainixihuan">
+           <div class="cainixihuan_mt"> <h2 title="猜你喜欢"><img src="images/JinDong_img/cainixihuan_.png" width="303" height="35px"></h2></div>
+            <div class="cainixihuan_mc">
+                <div class="spacer"></div>
+                <ul>
+                    <li><a href=""><img src="images/JinDong_img/like1_%20(1).jpg" alt=""/></a></li>
+                    <li><a href=""><img src="images/JinDong_img/like1_%20(2).jpg" alt=""/></a></li>
+                    <li><a href=""><img src="images/JinDong_img/like1_%20(3).jpg" alt=""/></a></li>
+                    <li><a href=""><img src="images/JinDong_img/like1_%20(4).jpg" alt=""/></a></li>
+                    <li><a href=""><img src="images/JinDong_img/like1_%20(5).jpg" alt=""/></a></li>
+                    <li><a href=""><img src="images/JinDong_img/like1_%20(6).jpg" alt=""/></a></li>
+                </ul>
+
+                 <!--   <li>
+                        <div><a href=""><img src="images/JinDong_img/fuzhuang/fuzhuan1-06.jpg" alt=""/></a></div>
+                        <div><a href="">夏季特惠224.5元 VeroModa弹力针织条纹圆领无袖包臀连衣裙</a></div>
+                        <div><span>￥</span><span>224.5</span></div>
+                    </li>-->
+            </div>
+        </section>
+
+        <section class="pingzhishenghuo">
+            <!--<h2>京东.品质生活</h2>-->
+            <h2 title="京东.品质生活"><img src="images/JinDong_img/pingzhishenghuo_t_.png" width="100%" height="36px"></h2>
+            <div class="pingzhishenghuo_content">
+                <div class="pingzhishenghuo_content_left">
+                    <div style="width: 404px;height: 405px;float: left">
+                        <h3 title="新发现"><a href=""><img src="images/JinDong_img/pingzhi_find.jpg" alt=""/></a></h3>
+                        <p><a href=""><img src="images/JinDong_img/pingzhi_find-04.jpg" alt=""/></a></p>
+                        <div class="gonyong_ul">
+                            <a href=""><img src="images/JinDong_img/pingzhi_find-07.jpg" alt=""/></a>
+                           <a href=""><img src="images/JinDong_img/pingzhi_find-08.jpg" alt=""/></a>
+                        </div>
+                    </div>
+                    <div style="width: 229px;height: 405px;float: left">
+                        <h3 title="好东西"><a href=""><img src="images/JinDong_img/pingzhi_hao.jpg" alt=""/></a></h3>
+                        <ul>
+                            <li><a href=""><img src="images/JinDong_img/pingzhi_hao-05.jpg" alt=""/></a></li>
+                            <li><a href=""><img src="images/JinDong_img/pingzhi_hao-09.jpg" alt=""/></a></li>
+                        </ul>
+                    </div>
+                    <div style="width: 404px;height: 405px;float: left">
+                        <h3 title="品牌街"><a href=""><img src="images/JinDong_img/pingzhi_find.jpg" alt=""/></a></h3>
+                        <p><a href=""><img src="images/JinDong_img/pingzhi_pingp-06.jpg" alt=""/></a></p>
+                        <div class="gonyong_ul">
+                           <a href=""><img src="images/JinDong_img/pingzhi_pingp-10.jpg" alt=""/></a>
+                            <a href=""><img src="images/JinDong_img/pingzhi_pingp-11.jpg" alt=""/></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="pingzhishenghuo_content_right">
+                    <div class="pingzhi_aside_left">
+                        <ul class="pingzhi_ul">
+                            <li><a href=""><img src="images/JinDong_img/pingzhi_aside_l.jpg" alt=""/></a></li>
+                            <li><a href=""><img src="images/JinDong_img/pingzhi_aside_l-03.jpg" alt=""/></a></li>
+                            <li><a href=""><img src="images/JinDong_img/pingzhi_aside_l-05.jpg" alt=""/></a></li>
+                            <li><a href=""><img src="images/JinDong_img/pingzhi_aside_l-07.jpg" alt=""/></a></li>
+                            <li><a href=""><img src="images/JinDong_img/pingzhi_aside_l-09.jpg" alt=""/></a></li>
+                            <li><a href=""><img src="images/JinDong_img/pingzhi_aside_l-11.jpg" alt=""/></a></li>
+                            <li><a href=""><img src="images/JinDong_img/pingzhi_aside_l-13.jpg" alt=""/></a></li>
+                        </ul>
+                    </div>
+                    <div class="pingzhi_aside_right">
+                        <ul class="pingzhi_ul">
+                            <li><a href=""><img src="images/JinDong_img/pingzhi_aside_r.jpg" alt=""/></a></li>
+                            <li><a href=""><img src="images/JinDong_img/pingzhi_aside_r-04.jpg" alt=""/></a></li>
+                            <li><a href=""><img src="images/JinDong_img/pingzhi_aside_r-06.jpg" alt=""/></a></li>
+                            <li><a href=""><img src="images/JinDong_img/pingzhi_aside_r-08.jpg" alt=""/></a></li>
+                            <li><a href=""><img src="images/JinDong_img/pingzhi_aside_r-10.jpg" alt=""/></a></li>
+                            <li><a href=""><img src="images/JinDong_img/pingzhi_aside_r-12.jpg" alt=""/></a></li>
+                            <li><a href=""><img src="images/JinDong_img/pingzhi_aside_r-14.jpg" alt=""/></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div style="margin:15px 5px"><a href=""><img src="images/JinDong_img/guangao3_.png" alt=""/></a></div>
+    </article>
+    <!--服装鞋包1-->
+    <div id="louceng_all">
+    <article class="article_fuzhuang" id="louceng1">
+            <div class="article_fuzhuang_t">
+                <h2 class="article_fuzhuang_t_logo"><img src="images/JinDong_img/fuzhuangbaoxie_logo.png" height="36px" alt=""/></h2>
+                <ul class="title_top_nav_you article_fuzhuang_t_daohang">
+                    <li><a href="">大牌</a></li>
+                    <li></li>
+                    <li><a href="">男装</a></li>
+                    <li></li>
+                    <li><a href="">女装</a></li>
+                    <li></li>
+                    <li><a href="">鞋靴</a></li>
+                    <li></li>
+                    <li><a href="">箱包</a></li>
+                    <li></li>
+                    <li><a href="">内衣配饰</a></li>
+                    <li></li>
+                    <li><a href="">珠宝首饰</a></li>
+                    <li></li>
+                    <li><a href="">奢侈礼品</a></li>
+                    <li></li>
+                    <li><a href="">奢华腕表</a></li>
+                    <li></li>
+                </ul>
+            </div>
+         <!--   <div class="spacer"></div>-->
+        <!--服装content-->
+        <div>
+            <!--左-->
+            <div style="width: 330px;height: 633px;float: left">
+                <div>
+                    <a href=""><img src="images/JinDong_img/gundong2/m__03.jpg" width="330" alt=""/></a>
+                </div>
+                <div><a href=""><img src="images/JinDong_img/fuzhuan3.jpg" alt=""/></a></div>
+            </div>
+                <!--右-->
+            <div style="width: 880px;height: 633px;float: left">
+                <ul class="fuzhuang_content_ul">
+                    <li>
+                        <div><a href=""><img src="images/JinDong_img/fuzhuang/fuzhuan1-06.jpg" alt=""/></a></div>
+                        <div><a href="">夏季特惠224.5元 VeroModa弹力针织条纹圆领无袖包臀连衣裙</a></div>
+                        <div><span>￥</span><span>224.5</span></div>
+                    </li>
+                    <li>
+                        <div><a href=""><img src="images/JinDong_img/fuzhuang/fuzhuan1-06.jpg" alt=""/></a></div>
+                        <div><a href="">夏季特惠224.5元 VeroModa弹力针织条纹圆领无袖包臀连衣裙</a></div>
+                        <div><span>￥</span><span>224.5</span></div>
+                    </li>
+                    <li>
+                        <div><a href=""><img src="images/JinDong_img/fuzhuang/fuzhuan1-06.jpg" alt=""/></a></div>
+                        <div><a href="">夏季特惠224.5元 VeroModa弹力针织条纹圆领无袖包臀连衣裙</a></div>
+                        <div><span>￥</span><span>224.5</span></div>
+                    </li>
+                    <li>
+                        <div><a href=""><img src="images/JinDong_img/fuzhuang/fuzhuan1-06.jpg" alt=""/></a></div>
+                        <div><a href="">夏季特惠224.5元 VeroModa弹力针织条纹圆领无袖包臀连衣裙</a></div>
+                        <div><span>￥</span><span>224.5</span></div>
+                    </li>
+                    <li>
+                        <div><a href=""><img src="images/JinDong_img/fuzhuang/fuzhuan1-06.jpg" alt=""/></a></div>
+                        <div><a href="">夏季特惠224.5元 VeroModa弹力针织条纹圆领无袖包臀连衣裙</a></div>
+                        <div><span>￥</span><span>224.5</span></div>
+                    </li>
+                    <li>
+                        <div><a href=""><img src="images/JinDong_img/fuzhuang/fuzhuan1-06.jpg" alt=""/></a></div>
+                        <div><a href="">夏季特惠224.5元 VeroModa弹力针织条纹圆领无袖包臀连衣裙</a></div>
+                        <div><span>￥</span><span>224.5</span></div>
+                    </li>
+                    <li>
+                        <div><a href=""><img src="images/JinDong_img/fuzhuang/fuzhuan1-06.jpg" alt=""/></a></div>
+                        <div><a href="">夏季特惠224.5元 VeroModa弹力针织条纹圆领无袖包臀连衣裙</a></div>
+                        <div><span>￥</span><span>224.5</span></div>
+                    </li>
+                    <li>
+                        <div><a href=""><img src="images/JinDong_img/fuzhuang/fuzhuan1-06.jpg" alt=""/></a></div>
+                        <div><a href="">夏季特惠224.5元 VeroModa弹力针织条纹圆领无袖包臀连衣裙</a></div>
+                        <div><span>￥</span><span>224.5</span></div>
+                    </li>
+                </ul>
+
+                <ul id="nihao" style="width: 880px;height: 633px;display: none;position:absolute;background:white;line-height: 100%;text-align: center">
+
+                    </ul>
+                <ul class="fuzhuang_content_ul_bottom">
+                    <li><a href=""><img src="images/JinDong_img/fuzhuang/fuzhuan3-22.jpg" alt=""/></a></li>
+                    <li><a href=""><img src="images/JinDong_img/fuzhuang/fuzhuan3-23.jpg" alt=""/></a></li>
+                    <li><a href=""><img src="images/JinDong_img/fuzhuang/fuzhuan3-24.jpg" alt=""/></a></li>
+                    <li><a href=""><img src="images/JinDong_img/fuzhuang/fuzhuan3-25.jpg" alt=""/></a></li>
+                </ul>
+            </div>
+            <script>
+                $(document).ready(function(){
+                    $(".article_fuzhuang_t_daohang li").hover(function(){
+                        $(this).addClass("fz_hover").siblings().removeClass();
+                        if($(this).index()>0){
+                        $("#nihao").css("display","block");
+                            var fu=["男装","女装","鞋靴","箱包","内衣配饰","珠宝首饰","奢侈礼品","奢华腕表"]
+                             //var num2=Math.ceil(Math.random()*10)
+                            $("#nihao").html(fu[Math.ceil(($(this).index())/2-1)]+"------暂时没有货物上架，抱歉")
+
+                        }else{
+                            $("#nihao").css("display","none");
+                        }
+                    })
+                })
+            </script>
+
+        </div>
+        <div class="fuzhuan_logo">
+            <ul class="fuzhuan_logo_nav">
+                <li><a href=""><img src="images/JinDong_img/fuzhuang/fuzhuan_logo-28.jpg" alt=""/></a></li>
+                <li><a href=""><img src="images/JinDong_img/fuzhuang/fuzhuan_logo-29.jpg" alt=""/></a></li>
+                <li><a href=""><img src="images/JinDong_img/fuzhuang/fuzhuan_logo-30.jpg" alt=""/></a></li>
+                <li><a href=""><img src="images/JinDong_img/fuzhuang/fuzhuan_logo-31.jpg" alt=""/></a></li>
+                <li><a href=""><img src="images/JinDong_img/fuzhuang/fuzhuan_logo-32.jpg" alt=""/></a></li>
+                <li><a href=""><img src="images/JinDong_img/fuzhuang/fuzhuan_logo-33.jpg" alt=""/></a></li>
+                <li><a href=""><img src="images/JinDong_img/fuzhuang/fuzhuan_logo-34.jpg" alt=""/></a></li>
+                <li><a href=""><img src="images/JinDong_img/fuzhuang/fuzhuan_logo-35.jpg" alt=""/></a></li>
+                <li><a href=""><img src="images/JinDong_img/fuzhuang/fuzhuan_logo-36.jpg" alt=""/></a></li>
+                <li><a href=""><img src="images/JinDong_img/fuzhuang/fuzhuan_logo.jpg" alt=""/></a></li>
+            </ul>
+        </div>
+    </article>
+    <div style="width: 100%;height: 10px;clear: both"></div>
+    <!--个人美妆2-->
+        <article class="article_fuzhuang" id="louceng2" style="clear: both">
+            <img src="images/JinDong_img/zanshi/2F_.png" alt=""/>
+        </article>
+    <!--手机通信3-->
+        <!--<!-;为求简单-图片-->
+        <article class="article_fuzhuang" id="louceng3" style="clear: both">
+            <img src="images/JinDong_img/zanshi/3F_.png" alt=""/>
+        </article>
+
+        <article class="article_fuzhuang" id="louceng4" style="clear: both">
+            <img src="images/JinDong_img/zanshi/4F_.png" alt=""/>
+        </article>
+        <article class="article_fuzhuang" id="louceng5" style="clear: both">
+            <img src="images/JinDong_img/zanshi/5F_.png" alt=""/>
+        </article>
+        <article class="article_fuzhuang" id="louceng6" style="clear: both">
+            <img src="images/JinDong_img/zanshi/6F_.png" alt=""/>
+        </article>
+        <article class="article_fuzhuang" id="louceng7" style="clear: both">
+            <img src="images/JinDong_img/zanshi/7F_.png" alt=""/>
+        </article>
+        <article class="article_fuzhuang" id="louceng8" style="clear: both">
+            <img src="images/JinDong_img/zanshi/8F_.png" alt=""/>
+        </article>
+        <article class="article_fuzhuang" id="louceng9" style="clear: both">
+            <img src="images/JinDong_img/zanshi/9F_.png" alt=""/>
+        </article>
+        <article class="article_fuzhuang" id="louceng10" style="clear: both">
+            <img src="images/JinDong_img/zanshi/10F_.png" alt=""/>
+        </article>
+        <article class="article_fuzhuang" id="louceng11" style="clear: both">
+            <img src="images/JinDong_img/zanshi/11F_.png" alt=""/>
+        </article>
+        <article class="article_fuzhuang" id="louceng12" style="clear: both">
+            <img src="images/JinDong_img/zanshi/12F_.png" alt=""/>
+        </article>
+    </div>
+</section>
+    <img src="images/JinDong_img/gundong2/footer_.png">
+</footer>
+</div>
+<!--固定窗体边上的--开始-->
+<!--左边楼层-->
+<div class="left_loucheng" id="louceng">
+    <ul>
+        <li><a>1F</a><a>服饰</a></li>
+        <li><a>2F</a><a>美妆</a></li>
+        <li><a>3F</a><a>手机</a></li>
+        <li><a>4F</a><a>家电</a></li>
+        <li><a>5F</a><a>数码</a></li>
+        <li><a>6F</a><a>运动</a></li>
+        <li><a>7F</a><a>居家</a></li>
+        <li><a>8F</a><a>母婴</a></li>
+        <li><a>9F</a><a>食品</a></li>
+        <li><a>10F</a><a>图书</a></li>
+        <li><a>11F</a><a>车品</a></li>
+        <li><a>12F</a><a>服务</a></li>
+    </ul>
+</div>
+<!--    -固定右边栏-->
+<div class="youbianlan">
+    <div class="youbianlan_r"></div>
+    <div class="youbianlan_l">
+        <ul class="my_ul">
+            <li>
+                <i><img src="images/JinDong_img/title/list.jpg" alt=""/></i>
+                <i><img src="images/JinDong_img/title/list_hover.jpg" alt=""/></i>
+                <em>京东会员</em>
+            </li>
+            <li>
+                <i><img src="images/JinDong_img/title/list-03.jpg" alt=""/></i>
+                <i><img src="images/JinDong_img/title/list_hover-03.jpg" alt=""/></i>
+                <em>购物车</em>
+            </li>
+            <li>
+                <i><img src="images/JinDong_img/title/list-04.jpg" alt=""/></i>
+                <i><img src="images/JinDong_img/title/list_hover-04.jpg" alt=""/></i>
+                <em>我的足迹</em>
+            </li>
+            <li>
+                <i><img src="images/JinDong_img/title/list-05.jpg" alt=""/></i>
+                <i><img src="images/JinDong_img/title/list_hover-05.jpg" alt=""/></i>
+                <em>我的关注</em>
+            </li>
+            <li>
+                <i><img src="images/JinDong_img/title/list-06.jpg" alt=""/></i>
+                <i><img src="images/JinDong_img/title/list_hover-06.jpg" alt=""/></i>
+                <em>我的消息</em>
+            </li>
+            <li>
+                <i><img src="images/JinDong_img/title/list-07.jpg" alt=""/></i>
+                <i><img src="images/JinDong_img/title/list_hover-07.jpg" alt=""/></i>
+                <em>咨询JIMI</em>
+            </li>
+        </ul>
+        <div class="my_lo_b">
+            <span onclick="zhiding()">
+                <i><img src="images/JinDong_img/title/zhiding.jpg" alt="置顶"/></i>
+                <i><img src="images/JinDong_img/title/zhiding_hover.jpg" alt="置顶"/></i>
+                     <em>置顶</em>
+            </span>
+            <span>
+                <i><img src="images/JinDong_img/title/fankui.jpg" alt="反馈"/></i>
+                <i><img src="images/JinDong_img/title/fankui_hover.jpg" alt="反馈"/></i>
+                <em>反馈</em>
+            </span>
+        </div>
+    </div>
+
+</div>
+<!--固定窗体边上的--结束-->
+<!--图片滚动-->
+<script>
+    /*第二个图片滚动*/
+    $(document).ready(function () {
+        var  page = 1;
+        var  Content_ul = $(".tuijian_gundong ul");
+        var   Width = $(".tuijian_gundong ul li").width()*4;
+        var  Length = Content_ul.find("li").length;
+        /* Pages=Length/4;*/
+        var Pages = Math.ceil(Length / 4);
+        try {
+            $(".prev1").click(function () {
+                if (!Content_ul.is(':animated')) {
+                    if (page == 1) {
+                        Content_ul.animate({'left': '-' + Width * (Pages - 1)}, "slow");
+                        page = Pages;
+                    } else {
+                        Content_ul.animate({'left': '+=' + Width}, "slow");
+                        page--;
+                    }
+                }
+            })
+            $(".next1").click(function () {
+                if (!Content_ul.is(':animated')) {
+                    if (page == Pages) {
+                        Content_ul.animate({left: 0}, "slow");
+                        page = 1;
+                    } else {
+                        Content_ul.animate({left: '-=' + Width}, "slow");
+                        page++;
+                    }
+                }
+            })
+
+        } catch (e) {
+            alert(e.message)
+        } finally {
+            // setTimeout("shows()", 3000);
+        }
+    })
+</script>
+<!--楼层-->
+<script>
+    /*楼层*/
+    function show_ct(){
+        window.onscroll=function(){
+            louceng=document.getElementById("louceng");
+            var top =document.documentElement.scrollTop||document.body.scrollTop;//body滚动的top
+            fz_th=document.getElementById("louceng1").offsetTop+150;//每个article与顶部的距离（包括他的高）
+            fz_h=document.getElementById("louceng1").scrollHeight//每个article的高度
+            fz_top=fz_th-fz_h;//ariticel顶部与最顶端的距离
+            var i=1
+            if(top>fz_top){
+                louceng.style.display="block"
+                i=Math.ceil((top-fz_top)/fz_h)//数量
+                if(top=fz_top+fz_h*i||top>fz_th+fz_h*i){
+                    $("#louceng ul li").find("a:nth-child(2)").removeClass();
+                    $("#louceng ul li").eq(i-1).find("a:nth-child(2)").addClass("selected_lou");
+                }
+            }else{
+                louceng.style.display = "none";
+            }
+        }
+        $(document).ready(function(){
+            var num=0;
+            $("#louceng ul li").click(function(){
+                $("#louceng ul li").find("a:nth-child(2)").removeClass("selected_lou");
+                $(this).find("a:nth-child(2)").addClass("selected_lou");
+                num= Number($(this).index())+1
+                louceng_gg="louceng"+num
+                document.getElementById(louceng_gg).scrollIntoView(true);	 //这个意思其实就是将这个元素到顶部来浏览器窗口的顶部来显示
+            })
+        })
+    }
+    show_ct()
+</script>
+</body>
+</html>

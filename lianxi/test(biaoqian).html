@@ -4,23 +4,44 @@
     <meta charset="UTF-8">
     <title>标签的用法</title>
     <style>
-        html,body{
-            width: 100%;height: 100%;margin: 0px;padding: 0px;
+        html, body {
+            width: 100%;
+            height: 100%;
+            margin: 0px;
+            padding: 0px;
         }
-        header{
-            width: 100%;height:100px;background: linear-gradient(to right,#0033FF,#FF6500,#2B93D2);opacity: 0.8;
+
+        header {
+            width: 100%;
+            height: 100px;
+            background: linear-gradient(to right, #0033FF, #FF6500, #2B93D2);
+            opacity: 0.8;
         }
-        #section{
-            width: 100%;height: auto;padding: 5px 5px;
+
+        #section {
+            width: 100%;
+            height: auto;
+            padding: 5px 5px;
         }
-        footer{
-            width: 100%;height:100px;background: linear-gradient(to left,#0033FF,#FF6500,#2B93D2);opacity: 0.6;clear: both;
+
+        footer {
+            width: 100%;
+            height: 100px;
+            background: linear-gradient(to left, #0033FF, #FF6500, #2B93D2);
+            opacity: 0.6;
+            clear: both;
         }
-        .aside1{
-          width: 30%;height: 100%;float: left;
+
+        .aside1 {
+            width: 30%;
+            height: 100%;
+            float: left;
         }
-        .section1{
-            width: 70%;height: 100%;float:right;
+
+        .section1 {
+            width: 70%;
+            height: 100%;
+            float: right;
         }
 
     </style>
@@ -31,40 +52,48 @@
 <body>
 <header></header>
 <section id="section">
-  <aside class="aside1">
-      请选择：<input type="text" list="data">
-      <datalist id="data">
-          <option value="hehe">年后</option>
-          <option value="hehe2">年后342</option>
-          <option value="hehe4">年后23423</option>
-          <option value="hehe4">年后234234</option>
-      </datalist>
-      <article>
-          <h2>一个定义列表：</h2>
-          <d1>
-              <dt>计算机(dt)</dt>
-              <dd>用来计算的仪器 ... ...(dd)</dd>
-              <dt>显示器</dt>
-              <dd>以视觉方式显示信息的装置 ... ...</dd>
-          </d1>
-        <p> <del>定义为删除文本</del>   <ins>插入文本ins</ins> <mark>标记性文本=>mark</mark></p>
-          <hr>
-          下载进度：
-          <progress value="22" max="100">
-          </progress>
+    <aside class="aside1">
+        请选择：<input type="text" list="data">
+        <datalist id="data">
+            <option value="hehe">年后</option>
+            <option value="hehe2">年后342</option>
+            <option value="hehe4">年后23423</option>
+            <option value="hehe4">年后234234</option>
+        </datalist>
+        <article>
+            <h2>一个定义列表：</h2>
+            <d1>
+                <dt>计算机(dt)</dt>
+                <dd>用来计算的仪器 ... ...(dd)</dd>
+                <dt>显示器</dt>
+                <dd>以视觉方式显示信息的装置 ... ...</dd>
+            </d1>
+            <p>
+                <del>定义为删除文本</del>
+                <ins>插入文本ins</ins>
+                <mark>标记性文本=>mark</mark>
+            </p>
+            <hr>
+            下载进度：
+            <progress value="22" max="100">
+            </progress>
 
-          <p><b>注释：</b>Internet Explorer 9 以及更早的版本不支持 <progress> 标签</p>
+            <p><b>注释：</b>Internet Explorer 9 以及更早的版本不支持
+                <progress> 标签
+            </p>
             <br>
-          <p>Here comes a short quotation: <q>This is a short quotation</q></p>
 
-          <p>请注意，浏览器在引用的周围插入了引号。</p>
-      </article>
-  </aside>
+            <p>Here comes a short quotation: <q>This is a short quotation</q></p>
+
+            <p>请注意，浏览器在引用的周围插入了引号。</p>
+        </article>
+    </aside>
     <section class="section1">
 
         <article>
             <embed id="video_player" name="video_player"
-                   src="http://player.youku.com/player.php/sid/XMTYwMjUwNzc1Mg==/partnerid/d50c8689ebe03441/v.swf" width="100%" height="500"
+                   src="http://player.youku.com/player.php/sid/XMTYwMjUwNzc1Mg==/partnerid/d50c8689ebe03441/v.swf"
+                   width="100%" height="500"
                    quality="high" align="middle" allowscriptaccess="always" allowfullscreen="true"
                    wmode="transparent" type="application/x-shockwave-flash">
                 <script>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <!--  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>-->
+    <meta content="width=device-width,initial-scale=1.0,minimum=1.0,maximum-scale=1.0,user-scalable=no" name="viewport" id="viewport"><!--视口-->
+    <link rel="stylesheet" type="text/css" href="javascripts/jquery.mobile/jquery.mobile-1.4.5.min.css">
+    <script src="javascripts/Script/jquery.js"></script>
+    <script src="javascripts/jquery.mobile/jquery.mobile-1.4.5.min.js"></script>
+    <title>jquery mobile</title>
+    <style>
+   /*     @media screen and (){
+
+        }*/
+   a {
+       margin: auto 0px !important;
+   }
+   .ui-controlgroup-controls {
+       margin: auto !important;
+       text-align: center;
+   }
+
+   .dd {
+       margin: auto !important;
+       text-align: center;
+   }
+    </style>
+    <!--swipe.js-->
+    <style>
+        .swipe {overflow: hidden;visibility: hidden;position: relative;}
+        .swipe-wrap {overflow: hidden;position: relative;}
+        .swipe-wrap > figure {float: left;width: 100%;position: relative;}
+    </style>
+</head>
+<body>
+<div data-role="page" id="page1">
+<div data-role="header">
+    <a data-role="button" data-icon="back" href="#page2"  data-transition="flip"></a>
+    <a data-role="button" data-icon="gear"></a>
+    <h3>我的歌单</h3>
+</div>
+    <div data-type="horizontal" data-role="controlgroup" class="dd">
+        <a href="#" data-role="button">选项</a>
+        <a href="#" data-role="button">选项</a>
+        <a href="#" data-role="button">选项</a>
+        <a href="#" data-role="button">选项</a>
+    </div>
+    <div data-role="content">
+        <ul data-role="listview" data-inset="true" data-filter="true" >
+            <li data-role="list-divider">港台歌手</li>
+            <li>
+                <img src="images/1.jpg">
+                <h3>周杰伦</h3>
+                <p>
+                    周杰伦（Jay Chou），1979年1月18日出生于台湾省新北市，中国台湾流行乐男歌手、音乐人、演员、导演、编剧、监制、商人。
+                </p>
+            </li>
+            <li>
+                <img src="images/1.jpg">
+                <h3>周杰伦</h3>
+                <p>
+                    周杰伦（Jay Chou），1979年1月18日出生于台湾省新北市，中国台湾流行乐男歌手、音乐人、演员、导演、编剧、监制、商人。
+                </p>
+            </li>
+            <li data-role="list-divider">大陆歌手</li>
+            <li>
+                <h3>刘德华</h3>
+            </li>
+            <li>
+                <h3>张卫健</h3>
+            </li>
+            <li>
+                <img src="images/1.jpg">
+                <h3>周杰伦</h3>
+                <p>
+                    周杰伦（Jay Chou），1979年1月18日出生于台湾省新北市，中国台湾流行乐男歌手、音乐人、演员、导演、编剧、监制、商人。
+                </p>
+            </li>
+        </ul>
+</div>
+<div data-role="footer" data-position="fixed">
+<div data-role="controlgroup" data-position="horizontal">
+    <a data-role="button" data-icon="grid"></a>
+    <a data-role="button" data-icon="mail"></a>
+    <a data-role="button" data-icon="camera"></a>
+    <a data-role="button" data-icon="phone"></a>
+</div>
+</div>
+</div>
+<!-- -&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;page2-->
+<div data-role="page" id="page2">
+    <div data-role="header">
+        <a data-role="button" data-icon="back" href="Swipe.js/Swipe.html" data-transition="slide"></a>
+        <a data-role="button" data-icon="gear"></a>
+        <h3>我的歌单</h3>
+    </div>
+
+    <div data-role="content">
+        <div data-type="horizontal" data-role="controlgroup">
+            <a href="#" data-role="button">选项</a>
+            <a href="#" data-role="button">选项</a>
+            <a href="#" data-role="button">选项</a>
+            <a href="#" data-role="button">选项</a>
+        </div>
+    </div>
+    <div data-role="footer" data-position="fixed">
+        <div data-role="controlgroup" data-position="horizontal" style="margin: auto">
+            <a href="#" data-role="button">选项</a>
+            <a href="#" data-role="button">选项</a>
+            <a href="#" data-role="button">选项</a>
+            <a href="#" data-role="button" data-icon="phone"></a>
+        </div>
+    </div>
+</div>
+
+<div data-role="page" id="page3">
+    <div data-role="header">
+        <h1>我的滑动图片</h1>
+    </div>
+    <div data-role="content"></div>
+    <div data-role="footer" data-position="fixed"></div>
+</div>
+</body>
+</html>

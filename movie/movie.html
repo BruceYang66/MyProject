@@ -2,17 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="../stylesheets/index.css" type="text/css">
+    <link rel="stylesheet" href="../stylesheets/Movie_index.css" type="text/css">
     <link rel="stylesheet" href="../stylesheets/movie.css" type="text/css">
     <script type="text/javascript" src="../javascripts/Script/jquery.js"></script>
-    <script type="text/javascript" src="../javascripts/index.js"></script>
+    <script type="text/javascript" src="../javascripts/Movie.js"></script>
     <script type="text/javascript" src="../javascripts/Script/jquery.cookie.js"></script>
     <!--    <title>电影主页</title>-->
     <title>97电影网,高清电影下载,PVideos,97资源站,免费电影下载,不用下载播放器的电影网站</title>
 </head>
 <body>
 <div style="width: 1000px;height: 25px;margin: auto;line-height: 25px;opacity: 0.8">
-    <h4 style="text-align: left;display: inline-block;float: left"><em>欢迎来到PVideos电影首页,我们因为电影而相聚。</em></h4> <h5 style="text-align: right;display: inline-block;float: right"><span>我的收藏-</span>> <a href="http://weibo.com/u/5026812951/home?wvr=5" target="_blank" id="weibo">关注我的微博</a></h5>
+    <h4 style="text-align: left;display: inline-block;float: left"><em>欢迎来到PVideos电影首页,我们因为电影而相聚。</em></h4> <h5
+        style="text-align: right;display: inline-block;float: right"><span>我的收藏-</span>> <a
+        href="http://weibo.com/u/5026812951/home?wvr=5" target="_blank" id="weibo">关注我的微博</a></h5>
 </div>
 <hr style="opacity: 0.5;">
 <header id="header">
@@ -26,7 +28,7 @@
     <div id="daohang">
         <nav id="nav">
             <ul>
-                <li><a href="../index.html">首页</a></li>
+                <li><a href="../Movie.html">首页</a></li>
                 <li><a href="../movie/movie.html">电影</a></li>
                 <li><a href="../movie/sharevip.html">迅雷VIP分享</a></li>
                 <li><a href="../movie/Top100_douban.html">豆瓣TOP250</a></li>
@@ -44,31 +46,83 @@
         <!--   ==============;电影类型- -->
 
         <header class="header_leixing">
-            <div><h4>年份：</h4> <span><a href="/videos/movie" class="quanbu" data-value="全部">全部</a> <a href="">2016</a><a>2015</a><a>2014</a><a>2013</a><a>2012</a><a>2011</a><a>十年前</a></span></div>
-            <div><h4>评分排序：</h4> <span><a href="/videos/movie" class="quanbu"  data-value="全部">全部</a> <a>10分以下</a><a>9分以下</a><a>8分以下</a><a>7分以下</a><a>6分以下</a></span></div>
-            <div><h4>国家地区：</h4> <span><a href="/videos/movie" class="quanbu" data-value="全部">全部</a> <a>中国</a><a>美国</a><a>法国</a><a>日本</a><a>韩国</a><a>印度</a><a>英国</a><a>意大利</a><a>泰国</a></span></div>
-            <div style="border-bottom:  solid 1px #dddddd;height: 50px;"><h4>影视类型：</h4> <span style="display:inline-block;width: 890px;float: right"><a href="/videos/movie"  class="quanbu" data-value="全部">全部</a><a href="" data-value="传记">传记</a><a href="" data-value="喜剧">喜剧</a><a href="/videos/movie?tag=剧情" class="tag" data-value="剧情">剧情</a><a href="/videos/movie?tag=枪战" class="tag" data-value="枪战">枪战</a><a href="/videos/movie?tag=恐怖" class="tag" data-value="恐怖">恐怖</a><a href="/videos/movie?tag=励志" class="tag" data-value="励志">励志</a><a href="/videos/movie?tag=动画" class="tag" data-value="动画">动画</a><a href="/videos/movie?tag=歌舞" class="tag" data-value="歌舞">歌舞</a><a href="/videos/movie?tag=罪案" class="tag" data-value="罪案">罪案</a><a href="/videos/movie?tag=偶像" class="tag" data-value="偶像">偶像</a><a href="/videos/movie?tag=悬疑" class="tag" data-value="悬疑">悬疑</a><a href="/videos/movie?tag=爱情" class="tag" data-value="爱情">爱情</a><a href="/videos/movie?tag=惊悚" class="tag" data-value="惊悚">惊悚</a><a href="/videos/movie?tag=综艺" class="tag" data-value="综艺">综艺</a><a href="/videos/movie?tag=纪录" class="tag" data-value="纪录">纪录</a><a href="/videos/movie?tag=青春" class="tag" data-value="青春">青春</a><a href="/videos/movie?tag=科幻" class="tag" data-value="科幻">科幻</a><a href="/videos/movie?tag=冒险" class="tag" data-value="冒险">冒险</a><a href="/videos/movie?tag=魔幻" class="tag" data-value="魔幻">魔幻</a><a href="/videos/movie?tag=丧尸" class="tag" data-value="丧尸">丧尸</a><a href="/videos/movie?tag=动作" class="tag" data-value="动作">动作</a><a href="/videos/movie?tag=幻想" class="tag" data-value="幻想">幻想</a><a href="/videos/movie?tag=战争" class="tag" data-value="战争">战争</a><a href="/videos/movie?tag=情色" class="tag" data-value="情色">情色</a><a href="/videos/movie?tag=血腥" class="tag" data-value="血腥">血腥</a><a href="/videos/movie?tag=西部" class="tag" data-value="西部">西部</a><a href="/videos/movie?tag=童话" class="tag" data-value="童话">童话</a><a href="/videos/movie?tag=暴力" class="tag" data-value="暴力">暴力</a><a href="/videos/movie?tag=古装" class="tag" data-value="古装">古装</a><a href="" data-value="灾难">灾难</a><a href="" data-value="谍战">谍战</a><a href="" data-value="生活">生活</a><a href="" class= data-value="讽刺">讽刺</a><a href="" data-value="其他">其他</a><a href="" data-value="同性">同性</a></span></div>
+            <div><h4>年份：</h4> <span><a href="/videos/movie" class="quanbu" data-value="全部">全部</a> <a href="">2016</a><a>2015</a><a>2014</a><a>2013</a><a>2012</a><a>2011</a><a>十年前</a></span>
+            </div>
+            <div><h4>评分排序：</h4> <span><a href="/videos/movie" class="quanbu"
+                                         data-value="全部">全部</a> <a>10分以下</a><a>9分以下</a><a>8分以下</a><a>7分以下</a><a>6分以下</a></span>
+            </div>
+            <div><h4>国家地区：</h4> <span><a href="/videos/movie" class="quanbu"
+                                         data-value="全部">全部</a> <a>中国</a><a>美国</a><a>法国</a><a>日本</a><a>韩国</a><a>印度</a><a>英国</a><a>意大利</a><a>泰国</a></span>
+            </div>
+            <div style="border-bottom:  solid 1px #dddddd;height: 50px;"><h4>影视类型：</h4> <span
+                    style="display:inline-block;width: 890px;float: right"><a href="/videos/movie" class="quanbu"
+                                                                              data-value="全部">全部</a><a href=""
+                                                                                                       data-value="传记">传记</a><a
+                    href="" data-value="喜剧">喜剧</a><a href="/videos/movie?tag=剧情" class="tag" data-value="剧情">剧情</a><a
+                    href="/videos/movie?tag=枪战" class="tag" data-value="枪战">枪战</a><a href="/videos/movie?tag=恐怖"
+                                                                                     class="tag"
+                                                                                     data-value="恐怖">恐怖</a><a
+                    href="/videos/movie?tag=励志" class="tag" data-value="励志">励志</a><a href="/videos/movie?tag=动画"
+                                                                                     class="tag"
+                                                                                     data-value="动画">动画</a><a
+                    href="/videos/movie?tag=歌舞" class="tag" data-value="歌舞">歌舞</a><a href="/videos/movie?tag=罪案"
+                                                                                     class="tag"
+                                                                                     data-value="罪案">罪案</a><a
+                    href="/videos/movie?tag=偶像" class="tag" data-value="偶像">偶像</a><a href="/videos/movie?tag=悬疑"
+                                                                                     class="tag"
+                                                                                     data-value="悬疑">悬疑</a><a
+                    href="/videos/movie?tag=爱情" class="tag" data-value="爱情">爱情</a><a href="/videos/movie?tag=惊悚"
+                                                                                     class="tag"
+                                                                                     data-value="惊悚">惊悚</a><a
+                    href="/videos/movie?tag=综艺" class="tag" data-value="综艺">综艺</a><a href="/videos/movie?tag=纪录"
+                                                                                     class="tag"
+                                                                                     data-value="纪录">纪录</a><a
+                    href="/videos/movie?tag=青春" class="tag" data-value="青春">青春</a><a href="/videos/movie?tag=科幻"
+                                                                                     class="tag"
+                                                                                     data-value="科幻">科幻</a><a
+                    href="/videos/movie?tag=冒险" class="tag" data-value="冒险">冒险</a><a href="/videos/movie?tag=魔幻"
+                                                                                     class="tag"
+                                                                                     data-value="魔幻">魔幻</a><a
+                    href="/videos/movie?tag=丧尸" class="tag" data-value="丧尸">丧尸</a><a href="/videos/movie?tag=动作"
+                                                                                     class="tag"
+                                                                                     data-value="动作">动作</a><a
+                    href="/videos/movie?tag=幻想" class="tag" data-value="幻想">幻想</a><a href="/videos/movie?tag=战争"
+                                                                                     class="tag"
+                                                                                     data-value="战争">战争</a><a
+                    href="/videos/movie?tag=情色" class="tag" data-value="情色">情色</a><a href="/videos/movie?tag=血腥"
+                                                                                     class="tag"
+                                                                                     data-value="血腥">血腥</a><a
+                    href="/videos/movie?tag=西部" class="tag" data-value="西部">西部</a><a href="/videos/movie?tag=童话"
+                                                                                     class="tag"
+                                                                                     data-value="童话">童话</a><a
+                    href="/videos/movie?tag=暴力" class="tag" data-value="暴力">暴力</a><a href="/videos/movie?tag=古装"
+                                                                                     class="tag"
+                                                                                     data-value="古装">古装</a><a href=""
+                                                                                                              data-value="灾难">灾难</a><a
+                    href="" data-value="谍战">谍战</a><a href="" data-value="生活">生活</a><a href=""
+                                                                                      class=data-value="讽刺">讽刺</a><a
+                    href="" data-value="其他">其他</a><a href="" data-value="同性">同性</a></span></div>
         </header>
         <script>
-            $(document).ready(function(){
+            $(document).ready(function () {
                 //href----上面
-          /*    $(".header_leixing a").attr("target","_blank");*/
+                /*    $(".header_leixing a").attr("target","_blank");*/
                 //排列
-              // $(".pailie img").attr("src","../images/movie/buer.JPG");
+                // $(".pailie img").attr("src","../images/movie/buer.JPG");
             })
         </script>
         <section>
             <!--<div><h1 class="h1">最新电影</h1><em style="font-size: 1.0em;">更多>></em></div>-->
             <div id="zuixin">
                 <script>
-                    $(document).ready(function(){
-                        var n=42;
-                        var moivesrc=["http://player.youku.com/player.php/sid/XMTYxMDkwNzczMg==/partnerid/d50c8689ebe03441/v.swf"]
-                        var imgsrc=["../images/movie/buer.JPG"]
-                        var moviename=["不二情书"]
+                    $(document).ready(function () {
+                        var n = 42;
+                        var moivesrc = ["http://player.youku.com/player.php/sid/XMTYxMDkwNzczMg==/partnerid/d50c8689ebe03441/v.swf"]
+                        var imgsrc = ["../images/movie/buer.JPG"]
+                        var moviename = ["不二情书"]
                         //for(var j=0;j<n;j++){
-                        for(var i=0;i<n;i++){
-                            var bian='<div class="pailie"> <a href="../movie/ShowVideo.html"  data-value='+moivesrc[0]+'> <img src='+imgsrc[0]+' alt="不二情书" width="154" height="205"/> </a> <div> <a href="../movie/ShowVideo.html" data-value='+moivesrc[0]+'> <h4>'+moviename[0]+'</h4></a><em> - 7.5分</em><div class="leixing"><span>类型：</span><a href="">喜剧</a><a href="">爱情</a></div> </div> </div>'
+                        for (var i = 0; i < n; i++) {
+                            var bian = '<div class="pailie"> <a href="../movie/ShowVideo.html"  data-value=' + moivesrc[0] + '> <img src=' + imgsrc[0] + ' alt="不二情书" width="154" height="205"/> </a> <div> <a href="../movie/ShowVideo.html" data-value=' + moivesrc[0] + '> <h4>' + moviename[0] + '</h4></a><em> - 7.5分</em><div class="leixing"><span>类型：</span><a href="">喜剧</a><a href="">爱情</a></div> </div> </div>'
                             $(bian).appendTo("#zuixin");
                         }
                         //}
@@ -76,16 +130,16 @@
                 </script>
                 <script>
                     //---------------------页面跳转获取视屏===共同拥有
-                    $(document).ready(function(){
-                        $(".pailie a[href='../movie/ShowVideo.html']").attr("target","_blank");
-                        $(".pailie").find("a").click(function(){
+                    $(document).ready(function () {
+                        $(".pailie a[href='../movie/ShowVideo.html']").attr("target", "_blank");
+                        $(".pailie").find("a").click(function () {
 
                             try {
                                 var src = $(this).attr("data-value");
-                                var moviename=$(this).parents(".pailie").find("h4").html();
+                                var moviename = $(this).parents(".pailie").find("h4").html();
                                 if (src != "") {
                                     sessionStorage["src"] = src;
-                                    sessionStorage["moviename"]=moviename;
+                                    sessionStorage["moviename"] = moviename;
 
                                 } else {
                                     alert("出错了");
@@ -97,7 +151,8 @@
                     })
                 </script>
             </div>
-            <div id="pages" style="height: 30px; width: 100%; text-align:left; margin-bottom: 20px;cursor: pointer"></div>
+            <div id="pages"
+                 style="height: 30px; width: 100%; text-align:left; margin-bottom: 20px;cursor: pointer"></div>
             <!-- 分页代码-->
             <script>
                 var obj = document.getElementById("zuixin");  //获取内容层
@@ -131,16 +186,17 @@
 
             </script>
         </section>
-  <!-- <div id="more"><h1>更多精彩电影>></h1></div>-->
-<!--   <div style=""><img src="../images/movie/fenye.JPG" alt=""></div>-->
+        <!-- <div id="more"><h1>更多精彩电影>></h1></div>-->
+        <!--   <div style=""><img src="../images/movie/fenye.JPG" alt=""></div>-->
 
     </article>
 </section>
 
 <footer>
     <hr>
-    <p> 免责声明：本网站所有内容都是靠程序在互联网上自动搜集而来，仅供测试和学习交流。  </p>
-    <p>  目前正在逐步删除和规避程序自动搜索采集到的不提供分享的版权影视。</p>
+    <p> 免责声明：本网站所有内容都是靠程序在互联网上自动搜集而来，仅供测试和学习交流。 </p>
+
+    <p> 目前正在逐步删除和规避程序自动搜索采集到的不提供分享的版权影视。</p>
 
     <p>若侵犯了您的权益，请发邮件通知站长，邮箱：1498026970@qq.com</p>
 
