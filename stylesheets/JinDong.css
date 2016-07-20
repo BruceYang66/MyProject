@@ -224,8 +224,8 @@ width: 210px;height: 100%;font-size: 0.8em;font-weight: bold;
     padding: 10px;border: 1px solid red;
     border-top: none !important;
 }
-.section_article1_left_nav h3{
-    font-size: 1.1em !important;
+.section_article1_left_nav h3,.section_article1_left_nav h3 a{
+    font-size: 14px;
 }
 .section_article1_left_nav>div:hover .item-jiayongdianqi{
     display: block;
