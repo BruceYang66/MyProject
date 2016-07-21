@@ -53,26 +53,6 @@
         </div>
     </div>
     <div class="top_100">
-        <script>
-            $(document).ready(function () {
-                var n = 1;
-                var moivesrc = ["http://player.youku.com/player.php/sid/XNjk5MjE2NTc2/partnerid/d50c8689ebe03441/v.swf"]
-                var imgsrc = ["../images/movie/buer.JPG"]
-                var moviename = ["澳门风云2"]
-                var movieEnglish = ["The Shawshank Redemption"]
-                var daoyuan = ["王晶"]
-                var zhuyuan = ["周润发"]
-                var date = ["1994"]
-                var fenshu = ["9.4"]
-                for (var i = 0; i < n; i++) {
-                    var num = i + 4;
-                    //var bian='<div class="pailie"><a href="ShowVideo.html"><img src="images/movie/buer.JPG" alt="不二情书" width="154" height="205"/></a><div><a href="ShowVideo.html"> <h4>不二情书</h4></a><em> - 7.5分</em> <div class="leixing"><span>类型：</span><a href="">喜剧</a><a href="">爱情</a></div></div></div>'
-                    var bian = '<div class="top_pailie"> <a href=""class="pai_a"  style="background:rgb(224,224,224)">' + num + '</a> <div class="img_top"> <img alt="" src="' + imgsrc[i] + '" width="100px" height="150px"> </div> <div class="top_xinxi"> <d1> <dt> <h4 ><a href="../movie/ShowVideo.html" data-value="' + moivesrc[i] + '">' + moviename[i] + '</a>' + movieEnglish[i] + ' </h4> </dt> <dd> <ul> <li>导演:<a href="">' + daoyuan[i] + '</a></li> <li>主演：<a href="">' + zhuyuan[i] + '</a>/<a href="">摩根·弗里曼</a>/<a href="">鲍勃·冈顿</a></li> <li>上映日期：<span>' + date[i] + '</span></li> </ul> </dd> </d1> </div> <div class="top_fenshu"><strong class="fenshu">' + fenshu[i] + '</strong></div> </div>';
-                    $(bian).appendTo(".top_100");
-                }
-            })
-
-        </script>
         <div class="top_pailie">
             <a href="" class="pai_a">1</a>
 
@@ -174,5 +154,25 @@
     <p> ♥ 97电影网 · ID97 · VERSION: 1.3.0 · 54.1ms</p>
 
 </footer>
+<!--<script>
+    $(document).ready(function () {
+        var n = 1;
+        var moivesrc = ["http://player.youku.com/player.php/sid/XNjk5MjE2NTc2/partnerid/d50c8689ebe03441/v.swf"]
+        var imgsrc = ["../images/movie/buer.JPG"]
+        var moviename = ["澳门风云2"]
+        var movieEnglish = ["The Shawshank Redemption"]
+        var daoyuan = ["王晶"]
+        var zhuyuan = ["周润发"]
+        var date = ["1994"]
+        var fenshu = ["9.4"]
+        for (var i = 0; i < n; i++) {
+            var num = i + 4;
+            //var bian='<div class="pailie"><a href="ShowVideo.html"><img src="images/movie/buer.JPG" alt="不二情书" width="154" height="205"/></a><div><a href="ShowVideo.html"> <h4>不二情书</h4></a><em> - 7.5分</em> <div class="leixing"><span>类型：</span><a href="">喜剧</a><a href="">爱情</a></div></div></div>'
+            var bian = '<div class="top_pailie"> <a href=""class="pai_a"  style="background:rgb(224,224,224)">' + num + '</a> <div class="img_top"> <img alt="" src="' + imgsrc[i] + '" width="100px" height="150px"> </div> <div class="top_xinxi"> <d1> <dt> <h4 ><a href="../movie/ShowVideo.html" data-value="' + moivesrc[i] + '">' + moviename[i] + '</a>' + movieEnglish[i] + ' </h4> </dt> <dd> <ul> <li>导演:<a href="">' + daoyuan[i] + '</a></li> <li>主演：<a href="">' + zhuyuan[i] + '</a>/<a href="">摩根·弗里曼</a>/<a href="">鲍勃·冈顿</a></li> <li>上映日期：<span>' + date[i] + '</span></li> </ul> </dd> </d1> </div> <div class="top_fenshu"><strong class="fenshu">' + fenshu[i] + '</strong></div> </div>';
+            $(bian).appendTo(".top_100");
+        }
+    })
+
+</script>-->
 </body>
 </html>

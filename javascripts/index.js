@@ -5,10 +5,6 @@
 个人网站首页*/
 /*
 图片滚动*/
-function huoname(){
-    var byname="yangchengle"
-    return byname;
-}
 $(document).ready(function () {
     page = 1;
     Pages = 6

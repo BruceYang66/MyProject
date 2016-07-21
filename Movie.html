@@ -117,7 +117,7 @@
             <div><h1 class="h1">热门电影</h1><em style="font-size: 1.0em;">更多>></em></div>
             <div id="remen" style="margin-top: 10px">
                 <script>
-                    $(document).ready(function () {
+                   $(document).ready(function () {
                         var n = 6;
                         var moivesrc = ["http://player.youku.com/player.php/sid/XNjk5MjE2NTc2/partnerid/d50c8689ebe03441/v.swf"]
                         var imgsrc = ["http://r1.ykimg.com/054204085397426A6A0A410FB018B700"]
@@ -126,7 +126,7 @@
                             var bian = '<div class="pailie"> <a href="movie/ShowVideo.html" data-value=' + moivesrc[0] + '> <img src=' + imgsrc[0] + ' alt="X战警" width="154" height="205"/> </a> <div> <a href="movie/ShowVideo.html" data-value=' + moivesrc[0] + '> <h4>' + moviename[0] + '</h4></a><em> - 8.2分</em> <div class="leixing"><span>类型：</span><a href="">科幻</a><a href="">动作</a></div> </div> </div>'
                             $(bian).appendTo("#remen");
                         }
-                    })
+                   // })
                 </script>
             </div>
             <div style="background:#f2f8fc;width: 100%;height: 35px;margin: auto;clear: both;margin-top: 5px"></div>
