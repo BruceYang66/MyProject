@@ -4,6 +4,7 @@
 /*
 个人网站首页*/
 /*
+
 图片滚动*/
 $(document).ready(function () {
     page = 1;

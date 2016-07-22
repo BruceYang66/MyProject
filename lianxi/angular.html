@@ -11,5 +11,24 @@
     <h3>{{name}}你好吗？</h3>
     <p>{{4+6}}</p>
 </div>
+<script>
+    try {
+     /*   setInterval("shw()",1000)
+        function shw(){
+        var date = new Date();
+        var dangdit = date.toLocaleTimeString()
+       document.getElementById("d").innerHTML=dangdit;
+        }*/
+        cars = {
+            car01 : {brand : "Ford", model : "Mustang", color : "red"},
+            car02 : {brand : "Fiat", model : "500", color : "white"},
+            car03 : {brand : "Volvo", model : "XC90", color : "black"}
+        }
+       alert( cars.car01.brand)
+    } catch (e) {
+        alert(e.message)
+    }
+</script>
+<h3 id="d"></h3>
 </body>
 </html>

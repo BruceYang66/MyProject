@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="BruceYang Yang"/>
+    <title>关于Bruceyang</title>
+    <link rel="stylesheet" href="../stylesheets/index.css" type="text/css"/>
+    <script src="../javascripts/Script/jquery.js"></script>
+    <script src="../javascripts/index.js" language="JavaScript" type="text/javascript"></script>
+    <style>
+    </style>
+</head>
+<body>
+<header>
+    <nav id="nav">
+        <ul class="ul1">
+            <li><a href="../index.html">首页</a></li>
+            <li><a href="#">个人作品</a>
+                <ul class="ul2">
+                    <li><a href="../JinDong.html" target="_blank">作品1-京东首页</a></li>
+                    <li><a href="../Movie.html" target="_blank">作品2-电影网</a></li>
+                </ul>
+            </li>
+            <li><a href="about_me.html">关于我</a></li>
+            <li id="liuyan"><a href="liuyanban.html">留言板</a></li>
+        </ul>
+    </nav>
+</header>
+<section class="section_zhu">
+    <article style="width: 67%;height: auto;float: left;">
+        <div style="width: 100%;height: 60px;border-bottom:dotted 2px #b3b3b3;">
+           <h><img src="../images/index/liuyanban/aboutme.JPG" alt="关于我" width="309" height="59" /></h>
+        </div>
+        <div class="aboutme_content">
+           <h2 style="float: left;margin-right: 8px;margin-bottom: 10px"><img src="../images/index/title/my.jpg" width="300" height="404" alt="Bruceyang" title="Bruceyang"></h2>
+            <p style="line-height: 30px;text-indent: 2em">
+                网页新闻管理系统
+                责任描述：个人开发
+                项目简介：
+                该项目是基于html5(html)\css3(css)、jquery、javascript搭建页面
+                C#语言\ASP.NET及SQL Server数据库、实现数据连接开发的新闻管理系统及后台管理
+                独立完成该项目的功能设计、模块划分、运用服务器控件连接数据库
+                教育经历
+                2014/09 -- 至今
+                广东工贸职业技术学院|软件技术|大专|统招
+                证书
+                2016/03
+                全国计算机二级java
+                专业技能
+                熟悉HTML/html5、CSS/css3、JavaScript等语言; 熟悉使用HTML5、CSS3等网页制作技术、页面架构和布局; 熟悉jQuery，ajax，实现网页特效与数据交互、对c#、.net，java等语言有一定的语法基础; 掌握Photoshop技术，乐观、有良好的沟通能力;|熟练|24
+                兴趣爱好
+                喜欢健身的各项体育运动，如：足球，篮球，游泳；我个人也比较喜欢关注新闻、和了解新的知识..
+                一句话：如果你爱生活，那就不要浪费时间，因为生活就是由时间组成的。----李小龙
+            </p>
+        </div>
+    </article>
+    <aside style="width: 30%;height: auto;float: right;overflow: hidden">
+        <div class="sidebar">
+            <a href="">前端</a>
+            <a href="">前端</a>
+            <a href="">前端</a>
+            <a href="">前端</a>
+            <a href="">前端</a>
+            <a href="">前端</a>
+            <a href="">前端</a>
+            <a href="">前端</a>
+            <a href="">前端</a>
+        </div>
+        <div class="geren">
+            <h2>怎么去做一个人</h2>
+            <br>
+            <p>如果你爱生活，那就不要浪费时间，因为生活就是由时间组成的。----李小龙</p>
+        </div>
+        <div class="guanyuwo">
+            <h2><img src="../images/index/title/guanyuwo.JPG" alt="关于我" width="100%" height="81"/></h2>
+            <ul>
+                <li>姓名：Bruceyang</li>
+                <li>QQ：2071958530</li>
+                <li>现居：广州</li>
+                <li>职业：前端开发</li>
+                <li>爱好：打篮球、踢足球、拳击</li>
+                <li>偶像：李小龙</li>
+                <li>喜欢的音乐：《有没有人告诉你》《500 Miles》</li>
+                <li><span>格言：</span>如果你爱生活，那就不要浪费时间，因为生活就是由时间组成的。----李小龙</li>
+            </ul>
+        </div>
+    </aside>
+
+</section>
+<footer class="footer">
+    <div class="footer_content">
+        <div>
+            <h3>友情链接</h3>
+            <br>
+            <a href="http://www.runoob.com/" target="_blank">RUNOOD.COM</a>
+        </div>
+        <div>
+            <h3>关于我</h3>
+            <br>
+            <p>我的日记</p>
+            <br>
+            <p>成长经历</p>
+            <br>
+            <p>童年的回忆</p>
+            <br>
+            <p>日常生活</p>
+        </div>
+        <div>
+            <h3>关于我的微博</h3>
+            <br>
+            <img src="../images/index/title/weibo.png" alt="我的微博" width="150" height="150">
+        </div>
+    </div>
+    <div class="footer_f">Design by:BrucYang </div>
+</footer>
+
+<div id="zhiding" onclick="zhiding()">
+    <img src="../images/index/zhiding.JPG" width="50" height="36" alt=""/>
+</div>
+<script>
+    try {
+        /*绝对窗体导航*/
+        var nav1 = document.getElementById("nav")
+        window.onscroll = function () {
+            var top = document.documentElement.scrollTop || document.body.scrollTop;//body滚动的top
+            if (top > 0) {
+                nav1.className = "nav_fixed"
+                $("#zhiding").fadeIn();
+            } else {
+                nav1.className = "nav_static"
+                $("#zhiding").fadeOut();
+            }
+        }
+        /*置顶*/
+        function zhiding() {
+            nav1.className = "nav_static"
+            nav1.scrollIntoView(true);
+        }
+    } catch (e) {
+        alert(e.message)
+    }
+</script>
+</body>
+</html>

@@ -74,7 +74,7 @@ a{
 .section_article1_gundong{
     width: 100%;height: 454px;position: relative;
 }
-.gundong_img{
+/*.gundong_img{
     width: 100%;height: 100%;position: relative;
 }
 .gundong_img li{
@@ -87,7 +87,7 @@ a{
 .selected_img{
     position: absolute;opacity:1 !important;visibility: visible !important;
 }
-/*圆点*/
+/!*圆点*!/
 .xiaoyuandian{
     list-style-type: none;
     width:60%;height:auto;
@@ -126,7 +126,7 @@ a{
 .next{
     height: 100%;width: 40px;float: right;background:rgba(0,0,0,.2);text-indent:15px;cursor: pointer;
     visibility:hidden;display: inline-block;border-radius: 4px;
-}
+}*/
 /*--------图片滚动结束*/
 /*----------------内容-*/
 .section_content{
@@ -173,7 +173,6 @@ width: 100px;height: 25px;line-height: 25px;font-size: 1.1em;background: #2489ce
 /*-----------aside*/
 .right_aside{
     width:30%;height:auto;float: right;
-    /*background: green;*/
 }
 .my{
     border: 1px solid #F3C8A6;
@@ -224,6 +223,17 @@ width: 100px;height: 25px;line-height: 25px;font-size: 1.1em;background: #2489ce
 .paih li a:visited{
     color: #b52a1d;
 }
+/*主页最新评论*/
+.zuixinpinglun{
+    width: 280px;border-radius:5px ;padding-left: 20px;border: 1px solid #F3C8A6;margin: auto;margin-top: 15px;
+    max-height:348px;overflow: hidden;
+}
+.zuixinpinglun h2{
+    font-size: 1.3em;color: #0033cc;line-height: 30px;
+}
+.zuixinpinglun h2 span{
+    color: darkred;
+}
 /*
 页脚*/
 .footer{
@@ -244,5 +254,107 @@ width: 33.3%;height: 90%;float: left;padding-top:15px;color: white;
 /*
 --------博主*/
 .bozhu{
-    width: 100%;height: 30px;clear: both;
+    width: 100%;height: 30px;clear: both;background: url("../images/index/title/boke.JPG");
+}
+/*
+---------------swipe图片滚动*/
+.swipe {overflow: hidden;visibility: hidden;position: relative;}
+.swipe-wrap {overflow: hidden;position: relative;}
+.swipe-wrap > div {
+    float: left;width: 100%;position: relative;
+}
+.swipe-wrap > div img{
+    width: 100%;height:450px;
+}
+.xiaoyuandian{
+    list-style-type: none;
+    width:60%;height:auto;
+}
+.xiaoyuandian li{
+    position: relative;
+    left: 60%;top: -50px;
+    width: 15px;height: 15px;
+    border-radius:10px;
+    border: 1px solid #00415e;
+    float: left;
+    margin: 0px 1%;
+    background: white;
+}
+.cur{
+    background: #0033cc !important;
+}
+/*
+----end*/
+
+/*
+留言板*/
+.ds-powered-by{
+    visibility: hidden;
+}
+/*个人*/
+.geren{
+    height: 100px;width: 90%;border:dashed 1px goldenrod;margin: auto;padding: 10px;
+}
+.geren h2{
+    color: red;text-align: center;
+}
+.geren p{
+    text-indent: 2em;color: #383838;
+}
+.zuixint li a{
+    display: inline-block;line-height: 30px;color: #383838;width: 100%;
+    border-bottom: dashed 1px #b3b3b3;
+}
+.zuixint li a:hover{
+    color: #0033FF;text-decoration: underline;
+}
+/*
+最近访客*/
+.fangke{
+    width: 100%;height: auto;margin-top: 15px;
+}
+.fangke h2{
+ line-height: 30px;color: #0033FF;
+    margin-bottom: 5px;
+}
+.fangke h2 span{
+    color: darkred;
+}
+#tiaozhuangliuyan{
+    line-height: 30px;color: red;
+}
+#tiaozhuangliuyan:hover{
+    color: #0033FF;text-decoration: underline;
+}
+/*aside*/
+/*
+关于我*/
+.aboutme_content{
+    width: 96%;padding: 2%;height: auto;
+ /*   border: 1px solid red;*/
+}
+.guanyuwo{
+    width: 100%;height: auto;border: 1px dashed greenyellow;border-radius: 5px;margin-top: 10px;
+}
+.guanyuwo ul{
+    margin-left: 50px;width: auto;
+}
+.guanyuwo ul li{
+    line-height: 30px;
+}
+.sidebar{
+    width: 100%;height: auto;overflow: hidden;margin: 5px 0px;
+}
+.sidebar a{
+    display: block;width: 30%;height: 30px;line-height: 30px;text-align: center;
+    margin: 5px 4px;float: left;color: white;font-weight: bolder;
+}
+.sidebar a:hover{
+    opacity: 0.7;
+}
+.sidebar a:nth-child(odd){
+    background: #0cc;
+}
+.sidebar a:nth-child(even){
+    background:#ce98ff;
 }

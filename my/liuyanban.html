@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="BruceYang Yang"/>
+    <title>BruceYang博客</title>
+    <link rel="stylesheet" href="../stylesheets/index.css" type="text/css"/>
+ <script src="../javascripts/Script/jquery.js"></script>
+    <!--     <script src="../javascripts/index.js" language="JavaScript" type="text/javascript"></script>-->
+</head>
+<body>
+<header>
+    <nav id="nav">
+        <ul class="ul1">
+            <li><a href="../index.html">首页</a></li>
+            <li><a href="#">个人作品</a>
+                <ul class="ul2">
+                    <li><a href="../JinDong.html" target="_blank">作品1-京东首页</a></li>
+                    <li><a href="../Movie.html" target="_blank">作品2-电影网</a></li>
+                </ul>
+            </li>
+            <li><a href="about_me.html">关于我</a></li>
+            <li id="liuyan"><a href="liuyanban.html">留言板</a></li>
+        </ul>
+    </nav>
+</header>
+<section class="section_zhu">
+    <article style="width: 67%;height: auto;float: left;">
+        <div style="width: 100%;height: 60px;border-bottom:dotted 2px #b3b3b3">
+            <img src="../images/index/liuyanban/liuyan.JPG" alt="留言板" width="182" height="59" />
+        </div>
+        <div>
+           <h2><span style="color: green">开心吗？来留个言吧！</span><a id="tiaozhuangliuyan">留言</a></h2>
+        </div>
+        <!-- 多说评论框 start -->
+        <div class="ds-thread" data-thread-key="63342" data-title="留言板" data-url=""></div>
+        <!-- 多说评论框 end -->
+        <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+        <script type="text/javascript">
+            var duoshuoQuery = {short_name:"bruceyang"};
+            (function() {
+                var ds = document.createElement('script');
+                ds.type = 'text/javascript';ds.async = true;
+                ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+                ds.charset = 'UTF-8';
+                (document.getElementsByTagName('head')[0]
+                || document.getElementsByTagName('body')[0]).appendChild(ds);
+            })();
+        </script>
+        <!-- 多说公共JS代码 end -->
+    </article>
+    <aside style="width: 30%;height: auto;float: right;overflow: hidden">
+        <div class="sidebar">
+            <a href="">前端</a>
+            <a href="">前端</a>
+            <a href="">前端</a>
+            <a href="">前端</a>
+            <a href="">前端</a>
+            <a href="">前端</a>
+            <a href="">前端</a>
+            <a href="">前端</a>
+            <a href="">前端</a>
+        </div>
+        <div class="geren">
+            <h2>怎么去做一个人</h2>
+            <br>
+            <p>如果你爱生活，那就不要浪费时间，因为生活就是由时间组成的。----李小龙</p>
+        </div>
+        <div>
+            <img src="../images/index/liuyanban/tuijian.JPG" alt="最新推荐" width="300" height="155">
+        </div>
+        <ul class="zuixint">
+            <li><a href="">四的公司的</a></li>
+            <li><a href="">时代大厦</a></li>
+            <li><a href="">werewolf</a></li>
+            <li><a href="">威特委托</a></li>
+        </ul>
+        <div class="fangke">
+            <h2>最近<span>访客</span></h2>
+            <ul class="ds-recent-visitors"></ul>
+            <!--多说js加载开始，一个页面只需要加载一次 -->
+            <script type="text/javascript">
+                var duoshuoQuery = {short_name:"bruceyang"};
+                (function() {
+                    var ds = document.createElement('script');
+                    ds.type = 'text/javascript';ds.async = true;
+                    ds.src = 'http://static.duoshuo.com/embed.js';
+                    ds.charset = 'UTF-8';
+                    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ds);
+                })();
+            </script>
+            <!--多说js加载结束，一个页面只需要加载一次 -->
+        </div>
+    </aside>
+<script>
+    $(document).ready(function(){
+        $("#tiaozhuangliuyan").click(function(){
+            $(".ds-rounded-top textarea[name='message']").focus();
+        })
+    })
+</script>
+</section>
+<footer class="footer">
+    <div class="footer_content">
+        <div>
+            <h3>友情链接</h3>
+            <br>
+            <a href="http://www.runoob.com/" target="_blank">RUNOOD.COM</a>
+        </div>
+        <div>
+            <h3>关于我</h3>
+            <br>
+            <p>我的日记</p>
+            <br>
+            <p>成长经历</p>
+            <br>
+            <p>童年的回忆</p>
+            <br>
+            <p>日常生活</p>
+        </div>
+        <div>
+            <h3>关于我的微博</h3>
+            <br>
+            <img src="../images/index/title/weibo.png" alt="我的微博" width="150" height="150">
+        </div>
+    </div>
+    <div class="footer_f">Design by:BrucYang </div>
+</footer>
+
+<div id="zhiding" onclick="zhiding()">
+    <img src="../images/index/zhiding.JPG" width="50" height="36" alt=""/>
+</div>
+<script>
+    try {
+        /*绝对窗体导航*/
+        var nav1 = document.getElementById("nav")
+        window.onscroll = function () {
+            var top = document.documentElement.scrollTop || document.body.scrollTop;//body滚动的top
+            if (top > 0) {
+                nav1.className = "nav_fixed"
+                $("#zhiding").fadeIn();
+            } else {
+                nav1.className = "nav_static"
+                $("#zhiding").fadeOut();
+            }
+        }
+        /*置顶*/
+        function zhiding() {
+            nav1.className = "nav_static"
+            nav1.scrollIntoView(true);
+        }
+    } catch (e) {
+        alert(e.message)
+    }
+</script>
+</body>
+</html>
