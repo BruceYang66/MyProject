@@ -1,7 +1,12 @@
 /**
  * Created by BruceOne on 2016/6/24.
  */
-
+/*$(document).ready(function(){
+    $("#nav ul>li").click(function(){
+        sessionStorage["dd"]=$(this).index();
+    })
+    $("#nav ul>li").eq( sessionStorage["dd"]).addClass("yixuan").siblings().removeClass()
+})*/
 $(document).ready(function () {
 //∑√Œ ¡ø
     /*  if (localStorage.pagecount)

@@ -12,7 +12,9 @@ html, body {
     width: 100%;
     height: auto;
 }
-
+.yixuan{
+    background: red;color: black;
+}
 /*--------------------БъЬт-----------*/
 #biaoti {
     width: 1000px;
@@ -84,7 +86,9 @@ html, body {
     float: left;
     list-style-type: none;
 }
-
+#nav ul:nth-of-type(1) li{
+float: left;
+}
 #nav ul:nth-of-type(1) li a {
     display: block;
     text-decoration: none;
@@ -93,7 +97,7 @@ html, body {
     height: 40px;
     text-align: center;
     line-height: 40px;
-    float: left;
+
 }
 
 #nav ul:nth-of-type(2) {
