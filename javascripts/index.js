@@ -3,8 +3,13 @@
  */
 /*
 个人网站首页*/
+$(document).ready(function(){
+    $(".ul1>li").click(function(){
+        sessionStorage["liindex"]=$(this).index();
+    })
+    $(".ul1>li").eq( sessionStorage["liindex"]).addClass("yixun").siblings().removeClass()
+})
 /*
-
 图片滚动*/
 $(document).ready(function () {
     page = 1;
