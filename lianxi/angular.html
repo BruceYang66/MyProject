@@ -6,8 +6,11 @@
     <script src="../javascripts/Script/angular.min.js"></script>
 </head>
 <body>
-<div ng-app="" ng-init="name='nihaoma'">
+<div ng-app="nihao" ng-init="name='nihaoma'" ng-controller="myCtrl">
     <input type="text" ng-model="name">
+    <li ng-repeat="x in names">
+        {{ x.Name + ', ' + x.Country }}
+    </li>
     <h3>{{name}}你好吗？</h3>
     <p>{{4+6}}</p>
 </div>
@@ -24,11 +27,39 @@
             car02 : {brand : "Fiat", model : "500", color : "white"},
             car03 : {brand : "Volvo", model : "XC90", color : "black"}
         }
-       alert( cars.car01.brand)
+     //  alert( cars.car01.brand)
     } catch (e) {
         alert(e.message)
     }
 </script>
+<script type="text/javascript">
+    //	以下代码也可以用于读取数据库数据。----但运行不了
+    var app = angular.module('nihao', []);
+    app.controller('myCtrl', function($scope, $http) {
+        $http.get("http://www.runoob.com/try/angularjs/data/Customers_JSON.php").success(function (response) {
+            $scope.names = response.records;
+        });
+    });
+</script>
 <h3 id="d"></h3>
+<!--表格--><!--运行不了-->
+<div ng-app="myApp1" ng-controller="customersCtrl">
+
+    <table>
+        <tr ng-repeat="x in names">
+            <td>{{ x.Name }}</td>
+            <td>{{ x.Country }}</td>
+        </tr>
+    </table>
+
+</div>
+
+<script>
+    var app = angular.module('myApp1', []);
+    app.controller('customersCtrl', function($scope, $http) {
+        $http.get("http://www.runoob.com/try/angularjs/data/Customers_SQL.aspx")
+                .success(function (response) {$scope.names = response.records;});
+    });
+</script>
 </body>
 </html>

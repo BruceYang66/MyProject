@@ -7,7 +7,9 @@ html, body {
     width: 100%;
     height: 100%;
 }
-
+a{
+    cursor: pointer;
+}
 #header {
     width: 100%;
     height: auto;
@@ -15,6 +17,7 @@ html, body {
 .yixuan{
     background: red;color: black;
 }
+
 /*--------------------БъЬт-----------*/
 #biaoti {
     width: 1000px;

@@ -6,7 +6,6 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/JinDong.css">
     <script type="text/javascript" src="javascripts/Script/jquery.js"></script>
     <script type="text/javascript" src="javascripts/jindong.js"></script>
-
     <script src="javascripts/Script/angular.min.js"></script>
 </head>
 <body>
@@ -18,7 +17,7 @@
             <div class="address_sonzi"> 送至：<span title="北京">北京</span><span> ></span></div>
         </div>-->
         <div>
-            <div class="address_sonzi"> 送至：<span title='{{name}}'>{{name}}</span><span class="zhuan"> ></span></div>
+            <div class="address_sonzi"> 送至：<span id="son_dizhi" title='{{name}}'>{{name}}</span><span class="zhuan"> ></span></div>
         </div>
         <div class="dizhi_quanbu">
             <a class="dizhi_a" ng-repeat="x in names">{{x}}</a>
@@ -35,7 +34,24 @@
                 },function(){
                     $(".dizhi_quanbu").removeClass("show_dizhi")
                 })
+                /*选择地址*/
+                $(".dizhi_quanbu a").click(function(){
+                    sessionStorage["dizhied"]=$(this).html()
+                    $("#son_dizhi").html(sessionStorage["dizhied"])
+                     /*  sessionStorage["dizhi_index"]=$(this).index();
+                     $(this).className("select_dizhi").siblings().removeClass()*/
+                })
+               /*    if(sessionStorage["dizhi"]==""){
+                 $(".dizhi_quanbu a").className("select_dizhi").eq(0).siblings().removeClass()
+                 }else{
+                 $(".dizhi_quanbu a").className("select_dizhi").eq( sessionStorage["dizhi"]).siblings().removeClass()
+                 }*/
+                if(sessionStorage["dizhied"]!=""){
+                    $("#son_dizhi").html(sessionStorage["dizhied"])
+                }
             })
+
+
         </script>
     </div>
     <ul class="title_top_nav_you">
