@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="stylesheets/Movie_index.css" type="text/css">
     <script type="text/javascript" src="javascripts/Script/jquery.js"></script>
     <script type="text/javascript" src="javascripts/Movie.js"></script>
-   <!-- <script type="text/javascript" src="javascripts/Script/jquery.cookie.js"></script>-->
+    <!-- <script type="text/javascript" src="javascripts/Script/jquery.cookie.js"></script>-->
     <!--    <title>电影主页</title>-->
     <title>97电影网,高清电影下载,PVideos,97资源站,免费电影下载,不用下载播放器的电影网站</title>
 </head>
@@ -55,36 +55,36 @@
                 </div>
             </div>
             <div class="img_active">
-                <a target="_blank" href="http://www.id97.com/videos/resource/id/178676.html"><img width="100%"
-                                                                                                  src="http://ww3.sinaimg.cn/large/0069qWFHgw1f55z1gk46yj30s20ciad0.jpg"
-                                                                                                  alt="超脑48小时高清迅雷下载"></a>
+                <a><img width="100%"
+                        src="http://ww3.sinaimg.cn/large/0069qWFHgw1f55z1gk46yj30s20ciad0.jpg"
+                        alt="超脑48小时高清迅雷下载"></a>
 
                 <div class="carousel-caption">
                     超脑48小时高清迅雷下载
                 </div>
             </div>
             <div class="img_active">
-                <a target="_blank" href="http://www.id97.com/videos/resource/id/174910.html"><img width="100%"
-                                                                                                  src="http://ww3.sinaimg.cn/large/0069qWFHgw1f509aesqx6j30s20cijuu.jpg"
-                                                                                                  alt="分歧者3迅雷下载"></a>
+                <a><img width="100%"
+                        src="http://ww3.sinaimg.cn/large/0069qWFHgw1f509aesqx6j30s20cijuu.jpg"
+                        alt="分歧者3迅雷下载"></a>
 
                 <div class="carousel-caption">
                     分歧者3迅雷下载
                 </div>
             </div>
             <div class="img_active">
-                <a target="_blank" href="http://www.id97.com/videos/resource/id/177149.html"><img width="100%"
-                                                                                                  src="http://ww1.sinaimg.cn/large/0069qWFHgw1f4ydv7991mj30s20cidl7.jpg"
-                                                                                                  alt="猎神：冬日之战高清迅雷下载"></a>
+                <a><img width="100%"
+                        src="http://ww1.sinaimg.cn/large/0069qWFHgw1f4ydv7991mj30s20cidl7.jpg"
+                        alt="猎神：冬日之战高清迅雷下载"></a>
 
                 <div class="carousel-caption">
                     猎神：冬日之战高清迅雷下载
                 </div>
             </div>
             <div class="img_active">
-                <a target="_blank" href="http://www.id97.com/videos/resource/id/177833.html"><img width="100%"
-                                                                                                  src="http://ww4.sinaimg.cn/large/0069qWFHgw1f554p129tmj30s20ci42o.jpg"
-                                                                                                  alt="大唐玄奘迅雷下载"></a>
+                <a><img width="100%"
+                        src="http://ww4.sinaimg.cn/large/0069qWFHgw1f554p129tmj30s20ci42o.jpg"
+                        alt="大唐玄奘迅雷下载"></a>
 
                 <div class="carousel-caption">
                     大唐玄奘迅雷下载
@@ -117,16 +117,14 @@
             <div><h1 class="h1">热门电影</h1><em style="font-size: 1.0em;">更多>></em></div>
             <div id="remen" style="margin-top: 10px">
                 <script>
-                   $(document).ready(function () {
+                    $(document).ready(function () {
                         var n = 6;
-                        var moivesrc = ["http://player.youku.com/player.php/sid/XNjk5MjE2NTc2/partnerid/d50c8689ebe03441/v.swf"]
-                        var imgsrc = ["http://r1.ykimg.com/054204085397426A6A0A410FB018B700"]
-                        var moviename = ["澳门风云2"]
+                        var moive={aomen:{moivesrc:"http://player.youku.com/player.php/sid/XNjk5MjE2NTc2/partnerid/d50c8689ebe03441/v.swf",imgsrc:"http://r1.ykimg.com/054204085397426A6A0A410FB018B700",moviename:"澳门风云2"}}
                         for (var i = 0; i < n; i++) {
-                            var bian = '<div class="pailie"> <a href="movie/ShowVideo.html" data-value=' + moivesrc[0] + '> <img src=' + imgsrc[0] + ' alt="X战警" width="154" height="205"/> </a> <div> <a href="movie/ShowVideo.html" data-value=' + moivesrc[0] + '> <h4>' + moviename[0] + '</h4></a><em> - 8.2分</em> <div class="leixing"><span>类型：</span><a href="">科幻</a><a href="">动作</a></div> </div> </div>'
+                            var bian = '<div class="pailie"> <a href="movie/ShowVideo.html" data-value=' + moive.aomen.moivesrc + '> <img src=' +moive.aomen.imgsrc + ' alt="澳门风云2" width="154" height="205"/> </a> <div> <a href="movie/ShowVideo.html" data-value=' + moive.aomen.moviename + '> <h4>' + moive.aomen.moviename + '</h4></a><em> - 8.2分</em> <div class="leixing"><span>类型：</span><a href="">科幻</a><a href="">动作</a></div> </div> </div>'
                             $(bian).appendTo("#remen");
                         }
-                   })
+                    })
                 </script>
             </div>
             <div style="background:#f2f8fc;width: 100%;height: 35px;margin: auto;clear: both;margin-top: 5px"></div>
@@ -140,11 +138,9 @@
                 <script>
                     $(document).ready(function () {
                         var n = 36;
-                        var moivesrc = ["http://player.youku.com/player.php/sid/XMTYxMDkwNzczMg==/partnerid/d50c8689ebe03441/v.swf"]
-                        var imgsrc = ["images/movie/buer.JPG"]
-                        var moviename = ["不二情书"]
+                        var moive={buerqingshu:{moivesrc:"http://player.youku.com/player.php/sid/XMTYxMDkwNzczMg==/partnerid/d50c8689ebe03441/v.swf",imgsrc:"images/movie/buer.JPG",moviename:"不二情书"}}
                         for (var i = 0; i < n; i++) {
-                            var bian = '<div class="pailie"> <a href="movie/ShowVideo.html"  data-value=' + moivesrc[0] + '> <img src=' + imgsrc[0] + ' alt="不二情书" width="154" height="205"/> </a> <div> <a href="movie/ShowVideo.html" data-value=' + moivesrc[0] + '> <h4>' + moviename[0] + '</h4></a><em> - 7.5分</em><div class="leixing"><span>类型：</span><a href="">喜剧</a><a href="">爱情</a></div> </div> </div>'
+                            var bian = '<div class="pailie"> <a href="movie/ShowVideo.html"  data-value=' + moive.buerqingshu.moivesrc + '> <img src=' + moive.buerqingshu.imgsrc + ' title='+moive.buerqingshu.moviename+' width="154" height="205"/> </a> <div> <a href="movie/ShowVideo.html" data-value=' +moive.buerqingshu.moivesrc + '> <h4>' +moive.buerqingshu.moviename + '</h4></a><em> - 7.5分</em><div class="leixing"><span>类型：</span><a href="">喜剧</a><a href="">爱情</a></div> </div> </div>'
                             $(bian).appendTo("#zuixin");
                         }
                     })
