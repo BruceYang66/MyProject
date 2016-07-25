@@ -8,16 +8,6 @@
     $("#nav ul>li").eq( sessionStorage["dd"]).addClass("yixuan").siblings().removeClass()
 })*/
 $(document).ready(function () {
-//访问量
-    /*  if (localStorage.pagecount)
-     {
-     localStorage.pagecount=Number(localStorage.pagecount) +1;
-     }
-     else
-     {
-     localStorage.pagecount=1;
-     }
-     $("#liuliang").html(localStorage.pagecount)*/
     //----------搜索---------
     $("#btn_search").click(function () {
         if ($("#search_text").val() != "") {
@@ -32,18 +22,8 @@ $(document).ready(function () {
         }
     })
 })
-//--------------------获取更多的电影----------------------
-/*$(document).ready(function(){
- var height=248*4;
- $("#zuixin").css({height:height+"px"})
- alert("sdf")
- $("#more").click(function(){
- $("#zuixin").css("height",height+height/2+"px")
- })
- })*/
 /*
  图片滚动*/
-
 $(document).ready(function () {
     page = 1;
     Article = $(".article1");

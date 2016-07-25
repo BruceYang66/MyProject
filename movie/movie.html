@@ -157,7 +157,7 @@
             <script>
                 var obj = document.getElementById("zuixin");  //获取内容层
                 var pages = document.getElementById("pages");         //获取翻页层
-                var pgindex = 1;                                      //当前页
+                var pgindex = 1;
                 window.onload = function ()                             //重写窗体加载的事件
                 {
                     var allpages = Math.ceil(parseInt(obj.scrollHeight) / parseInt(obj.offsetHeight));//获取页面数量
@@ -166,15 +166,16 @@
                         //pages.innerHTML += "<a href=\"javascript:showPage('" + i + "');\">第" + i + "页</a> ";
                         pages.innerHTML += "<a href=\"javascript:showPage('" + i + "');\"> " + i + "</a> ";
                         //循环输出第几页
-
                     }
                     if (obj.scrollHeight > obj.offsetHeight) {
-                        pages.innerHTML += "      <b onclick=\"gotopage('-1');\">上一页</b>  <b onclick=\"gotopage('1');\">下一页</b>"
+                        pages.innerHTML += "<b onclick=\"gotopage('-1');\">上一页</b>  <b onclick=\"gotopage('1');\">下一页</b>"
                     }
+                    $("#pages a").eq(pgindex - 1).addClass("selected_a").siblings().removeClass()//当前页
                 }
                 function gotopage(value) {
                     try {
                         value == "-1" ? showPage(pgindex - 1) : showPage(pgindex + 1);
+                        $("#pages a").eq(pgindex - 1).addClass("selected_a").siblings().removeClass()
                     } catch (e) {
 
                     }

@@ -362,3 +362,16 @@ footer p {
     color: #183691;
     opacity: 1.0;
 }
+/*
+----------------·ÖÒ³*/
+#pages a{
+    width: 25px;height: 25px;line-height: 25px;background: white;color: cadetblue;border: 1px #cccccc solid;
+    display: inline-block;text-align: center;text-decoration: none;margin: 0px;
+}
+#pages b{
+    width: auto;height: 25px;line-height: 25px;text-align: center;display: inline-block;
+    background: white;color: cadetblue;border: 1px #cccccc solid;display: inline-block;
+}
+.selected_a{
+    background: dodgerblue !important;color: white !important;
+}

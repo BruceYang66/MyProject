@@ -176,7 +176,7 @@ width: 100px;height: 25px;line-height: 25px;font-size: 1.1em;background: #2489ce
 /*主页最新评论*/
 .zuixinpinglun{
     width: 280px;border-radius:5px ;padding-left: 20px;border: 1px solid #F3C8A6;margin: auto;margin-top: 15px;
-    max-height:348px;overflow: hidden;
+ height: auto;
 }
 .zuixinpinglun h2{
     font-size: 1.3em;color: #0033cc;line-height: 30px;
