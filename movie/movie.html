@@ -183,6 +183,7 @@
                 function showPage(pageINdex) {
                     obj.scrollTop = (pageINdex - 1) * parseInt(obj.offsetHeight);                                                                  //根据高度，输出指定的页
                     pgindex = pageINdex;
+                    $("#pages a").eq(pgindex - 1).addClass("selected_a").siblings().removeClass()
                 }
 
             </script>
