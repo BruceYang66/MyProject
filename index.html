@@ -32,15 +32,19 @@
         <article>
             <div class="swipe" id="slider">
                 <div class="swipe-wrap">
+                    <div><img src="images/index/gundong/lixiaolong.jpg" alt=""/></div>
                     <div><img src="images/index/gundong/paobu.jpg" alt=""/></div>
                     <div><img src="images/index/gundong/quanji.jpg" alt=""/></div>
                     <div><img src="images/index/gundong/zuqiu.jpg" alt=""/></div>
                     <div><img src="images/index/gundong/zhiqc.JPG" alt=""/></div>
                     <div><img src="images/index/gundong/langqiu.jpg" alt=""/></div>
                     <div><img src="images/index/gundong/paoche.jpg" alt=""/></div>
+                    <div><img src="images/index/gundong/qi.jpg" alt=""/></div>
                 </div>
                 <ul class="xiaoyuandian">
                     <li class="cur"></li>
+                    <li></li>
+                    <li></li>
                     <li></li>
                     <li></li>
                     <li></li>
@@ -248,7 +252,7 @@
 <script>
     var elem=document.getElementById('slider');
     window.mySwipe= Swipe(elem,{
-        auto:3000,
+        auto:5000,
         //ontinuous: true,
         callback: function(index,element) {
             $(".xiaoyuandian li").eq(index).addClass("cur").siblings().removeClass("cur");
