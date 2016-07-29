@@ -157,14 +157,15 @@
             $(document).ready(function () {
                 var content_zhu = document.getElementById("zuixin")
                 var jiazai = document.getElementById("more");
+               var p_heigth=$(".pailie").get(0).offsetHeight+20;//每一张图片的宽度==>20为bottom边距
                 var sum = Math.ceil(parseInt(content_zhu.scrollHeight) - parseInt(content_zhu.offsetHeight))//比原来的长多少
                 var zongchang = Math.ceil(parseInt(content_zhu.scrollHeight));//总长
                 var hangshu = Math.ceil(sum / 248);//多少行
                 var i = 2;
                 jiazai.onclick = function () {
-                    var num = 1065;//开始
+                    var num = content_zhu.offsetHeight;//开始的高度
                     if (hangshu > i) {
-                        num += 250 * i;
+                        num += p_heigth * i;
                         $("#zuixin").animate({height: '' + num + 'px'}, "slow");
                     } else {
                         //alert("更多精彩电影")

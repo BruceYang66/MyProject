@@ -276,7 +276,7 @@ float: left;
 ---------------最新电影-----------*/
 #zuixin {
     width: 1000px;
-    height: 1065px;
+    height: 1072px;
     margin: auto;
     overflow: hidden;
 }
@@ -365,8 +365,9 @@ footer p {
 /*
 ----------------分页*/
 #pages a{
-    width: 25px;height: 25px;line-height: 25px;background: white;color: cadetblue;border: 1px #cccccc solid;
+    width: auto;height: 25px;line-height: 25px;background: white;color: cadetblue;border: 1px #cccccc solid;
     display: inline-block;text-align: center;text-decoration: none;margin: 0px;
+    padding: 0px 6px;
 }
 #pages b{
     width: auto;height: 25px;line-height: 25px;text-align: center;display: inline-block;
