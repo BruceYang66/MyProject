@@ -211,7 +211,7 @@ width: 210px;height: 100%;font-size: 0.8em;font-weight: bold;
     height: 31px;width: 95%;line-height: 31px;background: #b61d1d;color: white;padding-left: 5%;
 }
 .section_article1_left_nav>div i{
-    width: 20px;line-height: 31px;float: right;text-align: center;
+    width: 15px;line-height: 31px;float: right;text-align: center;
 }
 .section_article1_left_nav>div:hover h3 a,.section_article1_left_nav>div:hover{
     background: #f1f1f1;color: red;
@@ -228,7 +228,7 @@ width: 210px;height: 100%;font-size: 0.8em;font-weight: bold;
     border-top: none !important;
 }
 .section_article1_left_nav h3,.section_article1_left_nav h3 a{
-    font-size: 13px;
+    font-size: 14px;
 }
 .section_article1_left_nav>div:hover .item-jiayongdianqi{
     display: block;
