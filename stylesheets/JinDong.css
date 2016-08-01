@@ -225,6 +225,7 @@ width: 210px;height: 100%;font-size: 0.8em;font-weight: bold;
 .item-jiayongdianqi{
     width: 980px;min-height: 450px;background: #f1f1f1;position: absolute;z-index: 100000;top:0px;left: 210px;display: none;
     padding: 10px;border: 1px solid red;
+    margin-top: 2px;
     border-top: none !important;
 }
 .section_article1_left_nav h3,.section_article1_left_nav h3 a{
