@@ -8,11 +8,11 @@
     <script type="text/javascript" src="javascripts/jindong.js"></script>
     <script src="javascripts/Script/angular.min.js"></script>
 </head>
-<body>
-<div class="all">
+<body >
+<div class="all" ng-app="myapp">
 <div class="title_top" id="title_top">
 <div class="title_top_nav">
-    <div class="title_top_nav_address" ng-app="myaddress" ng-controller="address" ng-init="name='北京'">
+    <div class="title_top_nav_address"  ng-controller="address" ng-init="name='北京'">
         <!--<div>
             <div class="address_sonzi"> 送至：<span title="北京">北京</span><span> ></span></div>
         </div>-->
@@ -23,9 +23,13 @@
             <a class="dizhi_a" ng-repeat="x in names">{{x}}</a>
         </div>
         <script>
-            var app=angular.module("myaddress",[]);
+            function huoqu_app(){
+                var app=angular.module("myapp",[]);
+                return app;
+            }
+            var app=huoqu_app();
             app.controller('address',function($scope){
-            $scope.names=["北京","湖北","武汉","北海","湖d北","武d汉","北d海","湖e北","武e汉","北e海","湖g北","武g汉","北h海","湖n北","武含汉","北f海"];
+                $scope.names=["北京","湖北","武汉","北海","湖d北","武d汉","北d海","湖e北","武e汉","北e海","湖g北","武g汉","北h海","湖n北","武含汉","北f海"];
             });
             $(document).ready(function(){
                 $(".address_sonzi,.dizhi_quanbu").hover(function(){
@@ -33,15 +37,15 @@
 
                 },function(){
                     $(".dizhi_quanbu").removeClass("show_dizhi")
-                })
+                });
                 /*选择地址*/
                 $(".dizhi_quanbu a").click(function(){
-                    sessionStorage["dizhied"]=$(this).html()
-                    $("#son_dizhi").html(sessionStorage["dizhied"])
-                     /*  sessionStorage["dizhi_index"]=$(this).index();
+                    sessionStorage["dizhied"]=$(this).html();
+                    $("#son_dizhi").html(sessionStorage["dizhied"]);
+                    /*  sessionStorage["dizhi_index"]=$(this).index();
                      $(this).className("select_dizhi").siblings().removeClass()*/
                 })
-               /*    if(sessionStorage["dizhi"]==""){
+                /*    if(sessionStorage["dizhi"]==""){
                  $(".dizhi_quanbu a").className("select_dizhi").eq(0).siblings().removeClass()
                  }else{
                  $(".dizhi_quanbu a").className("select_dizhi").eq( sessionStorage["dizhi"]).siblings().removeClass()
@@ -50,8 +54,6 @@
                     $("#son_dizhi").html(sessionStorage["dizhied"])
                 }
             })
-
-
         </script>
     </div>
     <ul class="title_top_nav_you">
@@ -710,7 +712,6 @@
                     })
                 })
             </script>
-
         </div>
         <div class="fuzhuan_logo">
             <ul class="fuzhuan_logo_nav">
@@ -728,42 +729,42 @@
         </div>
     </article>
     <div style="width: 100%;height: 10px;clear: both"></div>
+        <!--<!-;为求简单-图片-->
     <!--个人美妆2-->
         <article class="article_fuzhuang" id="louceng2" style="clear: both">
-            <img src="images/JinDong_img/zanshi/2F_.png" alt=""/>
+            <img src="images/JinDong_img/zanshi/2F_.jpg" alt=""/>
         </article>
     <!--手机通信3-->
-        <!--<!-;为求简单-图片-->
         <article class="article_fuzhuang" id="louceng3" style="clear: both">
-            <img src="images/JinDong_img/zanshi/3F_.png" alt=""/>
+            <img src="images/JinDong_img/zanshi/3F_.jpg" alt=""/>
         </article>
 
         <article class="article_fuzhuang" id="louceng4" style="clear: both">
-            <img src="images/JinDong_img/zanshi/4F_.png" alt=""/>
+            <img src="images/JinDong_img/zanshi/4F_.jpg" alt=""/>
         </article>
         <article class="article_fuzhuang" id="louceng5" style="clear: both">
-            <img src="images/JinDong_img/zanshi/5F_.png" alt=""/>
+            <img src="images/JinDong_img/zanshi/5F_.jpg" alt=""/>
         </article>
         <article class="article_fuzhuang" id="louceng6" style="clear: both">
-            <img src="images/JinDong_img/zanshi/6F_.png" alt=""/>
+            <img src="images/JinDong_img/zanshi/6F_.jpg" alt=""/>
         </article>
         <article class="article_fuzhuang" id="louceng7" style="clear: both">
-            <img src="images/JinDong_img/zanshi/7F_.png" alt=""/>
+            <img src="images/JinDong_img/zanshi/7F_.jpg" alt=""/>
         </article>
         <article class="article_fuzhuang" id="louceng8" style="clear: both">
-            <img src="images/JinDong_img/zanshi/8F_.png" alt=""/>
+            <img src="images/JinDong_img/zanshi/8F_.jpg" alt=""/>
         </article>
         <article class="article_fuzhuang" id="louceng9" style="clear: both">
-            <img src="images/JinDong_img/zanshi/9F_.png" alt=""/>
+            <img src="images/JinDong_img/zanshi/9F_.jpg" alt=""/>
         </article>
         <article class="article_fuzhuang" id="louceng10" style="clear: both">
-            <img src="images/JinDong_img/zanshi/10F_.png" alt=""/>
+            <img src="images/JinDong_img/zanshi/10F_.jpg" alt=""/>
         </article>
         <article class="article_fuzhuang" id="louceng11" style="clear: both">
-            <img src="images/JinDong_img/zanshi/11F_.png" alt=""/>
+            <img src="images/JinDong_img/zanshi/11F_.jpg" alt=""/>
         </article>
         <article class="article_fuzhuang" id="louceng12" style="clear: both">
-            <img src="images/JinDong_img/zanshi/12F_.png" alt=""/>
+            <img src="images/JinDong_img/zanshi/12F_.jpg" alt=""/>
         </article>
     </div>
 </section>
